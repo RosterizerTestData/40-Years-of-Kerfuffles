@@ -1,0 +1,37 @@
+{
+  "name": "Agents of the Imperium",
+  "revision": "10.2.5",
+  "game": "Warhammer 40k",
+  "genre": "sci-fi",
+  "publisher": "Games Workshop",
+  "url": "https://warhammer40000.com",
+  "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
+  "wip": true,
+  "dependencies": [
+    {
+      "slug": "PVFM9U",
+      "name": "Imperium",
+      "game": "Warhammer 40,000"
+    }
+  ],
+  "manifest": {
+    "assetTaxonomy": {},
+    "assetCatalog": {
+      "Roster§Army": {
+        "stats": {
+          "Faction": {
+            "dynamic": false,
+            "ranks": {
+              "Agents of the Imperium": {
+                "order": 1
+              }
+            },
+            "value": "Agents of the Imperium"
+          }
+        }
+      }
+    },
+    "gameModes": {},
+    "theme": {}
+  }
+}
