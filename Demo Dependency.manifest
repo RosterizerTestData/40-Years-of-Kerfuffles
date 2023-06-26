@@ -1,0 +1,3035 @@
+{
+  "name": "Demo Dependency",
+  "revision": "10.1.13",
+  "game": "Spacefight 40,000",
+  "genre": "sci-fi",
+  "publisher": "Nonspecific Games Company",
+  "url": "https://Spacefight40000.com/",
+  "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution.",
+  "wip": true,
+  "dependencies": [],
+  "manifest": {
+    "assetTaxonomy": {
+      "Ability": {
+        "aspects": {
+          "Visibility": "active"
+        },
+        "rules": {
+          "Error in this Ability’s text": {
+            "evals": [
+              {
+                "actionable": true,
+                "contains": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "text"
+                  ]
+                ],
+                "value": "ERROR"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "error"
+          },
+          "putXInName": {
+            "actions": [
+              {
+                "actionType": "modify",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "designation"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "x",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "min": 1,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "x",
+                    "value"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 100
+          }
+        },
+        "stats": {
+          "x": {
+            "statType": "term",
+            "value": null,
+            "visibility": "hidden"
+          }
+        }
+      },
+      "Character": {
+        "allowed": {
+          "classifications": [
+            "Enhancement"
+          ]
+        },
+        "constraints": {
+          "any": [
+            "Core"
+          ]
+        },
+        "rules": {
+          "detachmentEnhancements": {
+            "actions": [
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "constraints",
+                    "any"
+                  ]
+                ],
+                "value": [
+                  "{roster}",
+                  "stats",
+                  "Detachment",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "noAllyEnhancements": {
+            "actions": [
+              {
+                "actionType": "remove",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "allowed",
+                    "classifications"
+                  ]
+                ],
+                "value": "Enhancement"
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "contains": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "keywords",
+                    "Faction"
+                  ]
+                ],
+                "value": [
+                  "{roster}",
+                  "stats",
+                  "Faction",
+                  "value"
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "noEpicHeroEnhancements": {
+            "actions": [
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "disallowed",
+                    "classifications"
+                  ]
+                ],
+                "value": "Enhancement"
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "contains": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "keywords",
+                    "Keywords"
+                  ]
+                ],
+                "value": "Epic Hero"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          }
+        },
+        "templateClass": "Unit"
+      },
+      "Detachment": {
+        "aspects": {
+          "Visibility": "active"
+        }
+      },
+      "Enhancement": {
+        "aspects": {
+          "Lock Qty": true,
+          "Unique": true
+        },
+        "rules": {
+          "There are more than 1 of this unique enhancement.": {
+            "evals": [
+              {
+                "actionable": false,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "designation"
+                  ]
+                ]
+              },
+              {
+                "actionable": false,
+                "max": 1,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{roster}",
+                    "tally",
+                    "{0string}"
+                  ]
+                ]
+              },
+              {
+                "actionable": true,
+                "max": 1,
+                "not": false,
+                "operator": "SUM",
+                "paths": [
+                  [
+                    "{self}",
+                    "aspects",
+                    "Unique"
+                  ],
+                  [
+                    "{self}",
+                    "rules",
+                    "There are more than 1 of this unique enhancement.",
+                    "evals",
+                    "1",
+                    "result",
+                    "truthy"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "error"
+          }
+        },
+        "stats": {
+          "Points": {
+            "group": "Cost",
+            "groupOrder": -1,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "normal"
+          }
+        }
+      },
+      "Infantry/Mounted": {
+        "templateClass": "Unit"
+      },
+      "Melee Weapon": {
+        "removed": {
+          "stats": {
+            "BS": {}
+          }
+        },
+        "stats": {
+          "Range": {
+            "format": "{v}",
+            "statType": "term",
+            "value": "Melee"
+          }
+        },
+        "templateClass": "Weapon"
+      },
+      "Model": {
+        "aspects": {
+          "Group Traits": true,
+          "Type": "game piece"
+        },
+        "rules": {
+          "renameModel": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "designation"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "modelName",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "modelName",
+                    "value"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 200
+          }
+        },
+        "stats": {
+          "Base": {
+            "statType": "term",
+            "value": null,
+            "visibility": "active"
+          },
+          "Ld": {
+            "format": "{v}+",
+            "group": "Stats",
+            "statOrder": 8,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "M": {
+            "format": "{v}″",
+            "group": "Stats",
+            "statOrder": 1,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "modelName": {
+            "statType": "term",
+            "value": null,
+            "visibility": "hidden"
+          },
+          "OC": {
+            "group": "Stats",
+            "statOrder": 9,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "Points": {
+            "format": "{v}",
+            "group": "Cost",
+            "groupOrder": -1,
+            "statType": "numeric",
+            "tracked": true,
+            "value": null
+          },
+          "Sv": {
+            "format": "{v}+",
+            "group": "Stats",
+            "statOrder": 6,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "T": {
+            "group": "Stats",
+            "statOrder": 5,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "W": {
+            "group": "Stats",
+            "statOrder": 6,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          }
+        }
+      },
+      "Order of Battle": {
+        "allowed": {
+          "classifications": [
+            "Unit"
+          ]
+        },
+        "aspects": {
+          "Group Includes": true
+        },
+        "rules": {
+          "hide enclosed assets": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "assets",
+                    "templateClass",
+                    "Unit",
+                    "aspects",
+                    "Visibility"
+                  ]
+                ],
+                "value": "active"
+              }
+            ],
+            "evals": [],
+            "evaluate": "OR",
+            "failState": "pass"
+          },
+          "noPoints": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "tracked",
+                    "Points"
+                  ]
+                ],
+                "value": 0
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "requisitionCalc": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Requisition Points",
+                    "value"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "rules",
+                  "requisitionCalc",
+                  "evals",
+                  "0",
+                  "result",
+                  "integer"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": false,
+                "equation": {
+                  "operator": "T-O",
+                  "value": [
+                    "{self}",
+                    "tally",
+                    "Requisition"
+                  ]
+                },
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Battle Tally",
+                    "value"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "supplyUsedLimit": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Power Level",
+                    "max"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Supply Limit",
+                  "value"
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          }
+        },
+        "stats": {
+          "Battle Tally": {
+            "dynamic": true,
+            "increment": {
+              "value": 1
+            },
+            "statType": "numeric",
+            "tracked": false,
+            "value": 0,
+            "visibility": "normal"
+          },
+          "Battles Won": {
+            "dynamic": true,
+            "increment": {
+              "value": 1
+            },
+            "statType": "numeric",
+            "tracked": false,
+            "value": 0,
+            "visibility": "normal"
+          },
+          "Power Level": {
+            "dynamic": false,
+            "label": "Supply Used",
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "normal"
+          },
+          "Requisition Points": {
+            "dynamic": false,
+            "max": 5,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 5,
+            "visibility": "normal"
+          },
+          "Supply Limit": {
+            "dynamic": true,
+            "increment": {
+              "value": 1
+            },
+            "statType": "numeric",
+            "tracked": false,
+            "value": 50,
+            "visibility": "normal"
+          }
+        }
+      },
+      "Ranged Weapon": {
+        "removed": {
+          "stats": {
+            "WS": {}
+          }
+        },
+        "templateClass": "Weapon"
+      },
+      "Stratagem": {
+        "aspects": {
+          "Group By": "Phase",
+          "Lock Qty": true,
+          "Unique": true,
+          "Visibility": "active"
+        },
+        "keywords": {
+          "Phase": [],
+          "Category": [],
+          "Turn": []
+        },
+        "stats": {
+          "Command Cost": {
+            "group": "Cost",
+            "groupOrder": -1,
+            "label": "CP",
+            "statType": "numeric",
+            "value": 0,
+            "visibility": "always"
+          }
+        }
+      },
+      "Stratagems": {
+        "aspects": {
+          "Order Traits A–Z": true,
+          "Visibility": "active"
+        },
+        "assets": {
+          "traits": [
+            "Stratagem§Heroic Intervention",
+            "Stratagem§Smokescreen",
+            "Stratagem§Go to Ground",
+            "Stratagem§Fire Overwatch",
+            "Stratagem§Rapid Ingress",
+            "Stratagem§Tank Shock",
+            "Stratagem§Grenade",
+            "Stratagem§Insane Bravery",
+            "Stratagem§Command Re-roll",
+            "Stratagem§Counter-offensive",
+            "Stratagem§Epic Challenge"
+          ]
+        }
+      },
+      "Unit": {
+        "allowed": {
+          "classifications": []
+        },
+        "aspects": {
+          "Group Includes": true,
+          "Group Traits": true,
+          "Lock Qty": true,
+          "Rename": true,
+          "Type": "conceptual"
+        },
+        "constraints": {
+          "any": []
+        },
+        "keywords": {
+          "Source": [],
+          "Faction": [],
+          "Keywords": [],
+          "Tags": []
+        },
+        "removed": {
+          "stats": {}
+        },
+        "rules": {
+          "apply2ndModelCost": {
+            "actions": [
+              {
+                "actionType": "modify",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Points",
+                    "value"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "model2ndCost",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": false,
+                "equation": {
+                  "operator": "T+O",
+                  "value": 1
+                },
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "model1stTally",
+                    "value"
+                  ]
+                ]
+              },
+              {
+                "actionable": true,
+                "min": [
+                  "{self}",
+                  "rules",
+                  "apply2ndModelCost",
+                  "evals",
+                  "0",
+                  "result",
+                  "integer"
+                ],
+                "not": false,
+                "note": "relies on trueModelTally, which must precede it in order",
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "rules",
+                    "trueModelTally",
+                    "evals",
+                    "0",
+                    "result",
+                    "integer"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 40
+          },
+          "apply3rdModelCost": {
+            "actions": [
+              {
+                "actionType": "modify",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Points",
+                    "value"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "model3rdCost",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": false,
+                "equation": {
+                  "operator": "T+O",
+                  "value": 1
+                },
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "model2ndTally",
+                    "value"
+                  ]
+                ]
+              },
+              {
+                "actionable": true,
+                "min": [
+                  "{self}",
+                  "rules",
+                  "apply3rdModelCost",
+                  "evals",
+                  "0",
+                  "result",
+                  "integer"
+                ],
+                "not": false,
+                "note": "relies on trueModelTally, which must precede it in order",
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "rules",
+                    "trueModelTally",
+                    "evals",
+                    "0",
+                    "result",
+                    "integer"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 40
+          },
+          "cheatUnitNameTally": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "tally",
+                    "{0string}"
+                  ]
+                ],
+                "value": 1
+              }
+            ],
+            "evals": [
+              {
+                "actionable": false,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "designation"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 4
+          },
+          "copyPointsIfAlly1": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Ally 1 Points",
+                    "value"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Points",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "contains": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "keywords",
+                    "Faction"
+                  ]
+                ],
+                "value": [
+                  "{roster}",
+                  "stats",
+                  "Allied faction 1",
+                  "value"
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 50
+          },
+          "copyPointsIfAlly2": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Ally 2 Points",
+                    "value"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Points",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "contains": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "keywords",
+                    "Faction"
+                  ]
+                ],
+                "value": [
+                  "{roster}",
+                  "stats",
+                  "Allied faction 2",
+                  "value"
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 50
+          },
+          "Error in this Unit’s text.": {
+            "evals": [
+              {
+                "actionable": true,
+                "contains": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "text"
+                  ]
+                ],
+                "value": "ERROR"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "error"
+          },
+          "hideWarlordOption": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Warlord",
+                    "value"
+                  ]
+                ],
+                "value": "-"
+              },
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Warlord",
+                    "visibility"
+                  ]
+                ],
+                "value": "hidden"
+              },
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "disallowed",
+                    "classifications"
+                  ]
+                ],
+                "value": "Warlord Trait"
+              }
+            ],
+            "evals": [
+              {
+                "actionable": false,
+                "min": 1,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{roster}",
+                    "tracked",
+                    "Warlord"
+                  ]
+                ]
+              },
+              {
+                "actionable": false,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Warlord",
+                    "value"
+                  ]
+                ],
+                "value": "✓"
+              },
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "rules",
+                    "hideWarlordOption",
+                    "evals",
+                    "0",
+                    "result",
+                    "truthy"
+                  ],
+                  [
+                    "{self}",
+                    "rules",
+                    "hideWarlordOption",
+                    "evals",
+                    "1",
+                    "result",
+                    "truthy"
+                  ]
+                ],
+                "value": true
+              },
+              {
+                "actionable": true,
+                "min": 1,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "tally",
+                    "Character"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "OR",
+            "failState": "pass",
+            "order": 25
+          },
+          "maxQty": {
+            "actions": [
+              {
+                "actionType": "modify",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "maxQty",
+                    "value"
+                  ]
+                ],
+                "value": 3
+              }
+            ],
+            "evals": [
+              {
+                "actionable": false,
+                "contains": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "keywords",
+                    "Keywords"
+                  ]
+                ],
+                "value": "Battleline"
+              },
+              {
+                "actionable": false,
+                "contains": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "keywords",
+                    "Keywords"
+                  ]
+                ],
+                "value": "Dedicated Transport"
+              },
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "OR",
+                "paths": [
+                  [
+                    "{self}",
+                    "rules",
+                    "maxQty",
+                    "evals",
+                    "0",
+                    "result",
+                    "truthy"
+                  ],
+                  [
+                    "{self}",
+                    "rules",
+                    "maxQty",
+                    "evals",
+                    "1",
+                    "result",
+                    "truthy"
+                  ]
+                ],
+                "value": true
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 5
+          },
+          "Too many of this unit type in the army.": {
+            "evals": [
+              {
+                "actionable": false,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "designation"
+                  ]
+                ]
+              },
+              {
+                "actionable": true,
+                "max": [
+                  "{self}",
+                  "stats",
+                  "maxQty",
+                  "value"
+                ],
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{roster}",
+                    "tally",
+                    "{0string}"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "OR",
+            "failState": "error"
+          },
+          "trueModelTally": {
+            "evals": [
+              {
+                "actionable": false,
+                "equation": {
+                  "operator": "T-O",
+                  "value": [
+                    "{self}",
+                    "tally",
+                    "noTally"
+                  ]
+                },
+                "not": false,
+                "note": "Count the total number of tallyable models for points threshold purposes",
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "tally",
+                    "Model"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 35
+          }
+        },
+        "stats": {
+          "Ally 1 Points": {
+            "group": "Cost",
+            "groupOrder": -1,
+            "statOrder": 2,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "Ally 2 Points": {
+            "group": "Cost",
+            "groupOrder": -1,
+            "statOrder": 3,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "Base": {
+            "statType": "term",
+            "value": null,
+            "visibility": "active"
+          },
+          "Enhancement": {
+            "max": 1,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "Ld": {
+            "format": "{v}+",
+            "group": "Stats",
+            "statOrder": 8,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "M": {
+            "format": "{v}″",
+            "group": "Stats",
+            "statOrder": 1,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "maxQty": {
+            "statType": "numeric",
+            "value": 3,
+            "visibility": "hidden"
+          },
+          "model1stTally": {
+            "statType": "numeric",
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "model2ndCost": {
+            "statType": "numeric",
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "model2ndTally": {
+            "statType": "numeric",
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "model3rdCost": {
+            "statType": "numeric",
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "OC": {
+            "group": "Stats",
+            "statOrder": 9,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "Points": {
+            "format": "{v}",
+            "group": "Cost",
+            "groupOrder": -1,
+            "statOrder": 1,
+            "statType": "numeric",
+            "tracked": true,
+            "value": null,
+            "visibility": "always"
+          },
+          "Sv": {
+            "format": "{v}+",
+            "group": "Stats",
+            "statOrder": 6,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "T": {
+            "group": "Stats",
+            "statOrder": 5,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "W": {
+            "group": "Stats",
+            "statOrder": 6,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "normal"
+          },
+          "Warlord": {
+            "dynamic": true,
+            "ranks": {
+              "-": {
+                "order": 0
+              },
+              "✓": {
+                "order": 1,
+                "tracking": {
+                  "Warlord": 1
+                }
+              }
+            },
+            "statType": "rank",
+            "tracked": true,
+            "value": "-",
+            "visibility": "normal"
+          }
+        }
+      },
+      "Upgrade": {
+        "stats": {
+          "Points": {
+            "dynamic": false,
+            "format": "+{v}",
+            "statType": "numeric",
+            "tracked": true,
+            "visibility": "normal"
+          },
+          "Power Level": {
+            "dynamic": false,
+            "format": "+{v}",
+            "statType": "numeric",
+            "tracked": true,
+            "visibility": "normal"
+          }
+        }
+      },
+      "Vehicle": {
+        "templateClass": "Unit"
+      },
+      "Wargear": {
+        "aspects": {
+          "Visibility": "always"
+        },
+        "rules": {
+          "addKeywordToGrandparent": {
+            "actions": [
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{parent}",
+                    "{parent}",
+                    "keywords",
+                    "Keywords"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "keyword?",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "contains": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{parent}",
+                    "{parent}",
+                    "keywords",
+                    "Keywords"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "keyword?",
+                  "value"
+                ]
+              },
+              {
+                "actionable": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "keyword?",
+                    "value"
+                  ]
+                ],
+                "value": "none"
+              },
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{parent}",
+                    "{parent}",
+                    "classification"
+                  ]
+                ],
+                "value": "Unit"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 12
+          },
+          "addKeywordToParent": {
+            "actions": [
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{parent}",
+                    "keywords",
+                    "Keywords"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "keyword?",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "contains": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{parent}",
+                    "keywords",
+                    "Keywords"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "keyword?",
+                  "value"
+                ]
+              },
+              {
+                "actionable": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "keyword?",
+                    "value"
+                  ]
+                ],
+                "value": "none"
+              },
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{parent}",
+                    "classification"
+                  ]
+                ],
+                "value": "Unit"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 12
+          },
+          "renameWargear": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "designation"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "wargearName",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "wargearName",
+                    "value"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 200
+          }
+        },
+        "stats": {
+          "keyword?": {
+            "statType": "term",
+            "value": "none",
+            "visibility": "hidden"
+          },
+          "wargearName": {
+            "statType": "term",
+            "value": null,
+            "visibility": "hidden"
+          }
+        }
+      },
+      "Weapon": {
+        "aspects": {
+          "Visibility": "always"
+        },
+        "rules": {
+          "allowEnhancements": {
+            "actions": [
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "allowed",
+                    "classifications"
+                  ]
+                ],
+                "value": "Weapon Enhancement"
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "min": 1,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{parent}",
+                    "stats",
+                    "Battle Honours",
+                    "max"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "allowMelee": {
+            "actions": [
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "constraints",
+                    "any"
+                  ]
+                ],
+                "value": "Melee"
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Range",
+                    "value"
+                  ]
+                ],
+                "value": "Melee"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "allowRanged": {
+            "actions": [
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "constraints",
+                    "any"
+                  ]
+                ],
+                "value": "Ranged"
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Range",
+                    "value"
+                  ]
+                ],
+                "value": "Melee"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "renameWeapon": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "designation"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "weaponName",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "weaponName",
+                    "value"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 200
+          },
+          "resetStatsForMultiWeapons": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    [
+                      "A",
+                      "AP",
+                      "D",
+                      "BS",
+                      "WS",
+                      "Range",
+                      "S"
+                    ],
+                    "value"
+                  ]
+                ],
+                "value": null
+              },
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    [
+                      "A",
+                      "AP",
+                      "D",
+                      "BS",
+                      "WS",
+                      "Range",
+                      "S"
+                    ],
+                    "visibility"
+                  ]
+                ],
+                "value": "hidden"
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "min": 1,
+                "not": false,
+                "operator": "SUM",
+                "paths": [
+                  [
+                    "{self}",
+                    "traits",
+                    "classIdentity",
+                    "Weapon",
+                    "quantity"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 1
+          }
+        },
+        "stats": {
+          "A": {
+            "statOrder": 1,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "always"
+          },
+          "AP": {
+            "statOrder": 4,
+            "statType": "numeric",
+            "tracked": true,
+            "value": null,
+            "visibility": "always"
+          },
+          "BS": {
+            "format": "{v}+",
+            "statOrder": 2,
+            "statType": "numeric",
+            "tracked": true,
+            "value": null,
+            "visibility": "always"
+          },
+          "D": {
+            "dynamic": false,
+            "statOrder": 5,
+            "statType": "numeric",
+            "tracked": true,
+            "value": null,
+            "visibility": "always"
+          },
+          "Range": {
+            "format": "{v}″",
+            "statOrder": 0,
+            "statType": "numeric",
+            "value": null,
+            "visibility": "always"
+          },
+          "S": {
+            "dynamic": false,
+            "statOrder": 3,
+            "statType": "numeric",
+            "tracked": true,
+            "value": null,
+            "visibility": "always"
+          },
+          "weaponName": {
+            "statType": "term",
+            "value": null,
+            "visibility": "hidden"
+          },
+          "WS": {
+            "format": "{v}+",
+            "statOrder": 2,
+            "statType": "numeric",
+            "tracked": true,
+            "value": null,
+            "visibility": "always"
+          }
+        }
+      }
+    },
+    "assetCatalog": {
+      "Ability§Anti-": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "rules": {
+          "putKeywordInName": {
+            "actions": [
+              {
+                "actionType": "modify",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "designation"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "keyword",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "min": 1,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "keyword",
+                    "value"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 99
+          }
+        },
+        "stats": {
+          "keyword": {
+            "statType": "term",
+            "value": null,
+            "visibility": "hidden"
+          },
+          "x": {
+            "text": "An unmodified Wound roll of {t} against a target with the matching keyword scores a Critical Wound."
+          }
+        }
+      },
+      "Ability§Assault": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "Can be shot even if the bearer’s unit Advanced."
+      },
+      "Ability§Blast": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "* Add 1 to the Attacks characteristic for every five models in the target unit (rounding down).\n* Can never be used against a target that is within Engagement Range of any units from the attacking model’s army (including its own)."
+      },
+      "Ability§Damaged:": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "stats": {
+          "x": {
+            "text": "While this model has {t}, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      },
+      "Ability§Deadly Demise": {
+        "keywords": {
+          "Tags": [
+            "Core"
+          ],
+          "Keywords": [
+            "Model Ability"
+          ]
+        },
+        "stats": {
+          "x": {
+            "text": "When this model is destroyed, roll one D6. On a 6, each unit within 6\" suffers {t} mortal wounds."
+          }
+        }
+      },
+      "Ability§Deep Strike": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "text": "* Unit can be set up in Reserves instead of on the battlefield.\n* Unit can be set up in your Reinforcements step, more than 9\" horizontally away from all enemy models."
+      },
+      "Ability§Devastating Wounds": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "A Critical Wound inflicts mortal wounds equal to the weapon’s Damage characteristic, instead of any normal damage."
+      },
+      "Ability§Extra Attacks": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "The bearer can attack with this weapon in addition to any other weapons it can make attacks with."
+      },
+      "Ability§Feel No Pain": {
+        "keywords": {
+          "Tags": [
+            "Core"
+          ],
+          "Keywords": [
+            "Model Ability"
+          ]
+        },
+        "stats": {
+          "x": {
+            "text": "Each time this model would lose a wound, roll one D6: if the result equals or exceeds {t}, that wound is not lost."
+          }
+        }
+      },
+      "Ability§Fights First": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "text": "Units with this ability that are eligible to fight do so in the Fights First step, provided every model in the unit has this ability."
+      },
+      "Ability§Firing Deck": {
+        "keywords": {
+          "Tags": [
+            "Core"
+          ],
+          "Keywords": [
+            "Model Ability"
+          ]
+        },
+        "stats": {
+          "x": {
+            "text": "Each time this Transport shoots, select one weapon from up to {t} models embarked within it; this Transport counts as being equipped with those weapons as well."
+          }
+        }
+      },
+      "Ability§Hazardous": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "After a unit shoots or fights, roll one Hazardous test (one D6) for each Hazardous weapon used. For each 1, one model equipped with a Hazardous weapon is destroyed (Characters, Monsters and Vehicles suffer 3 mortal wounds instead)."
+      },
+      "Ability§Heavy": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "Add 1 to Hit rolls if the bearer’s unit Remained Stationary this turn."
+      },
+      "Ability§Hover": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "text": "When you are instructed to Declare Battle Formations, before doing anything else, you must first declare which models from your army with this ability will be in Hover mode.\n\nIf a model is in Hover mode, then until the end of the battle, its Move characteristic is changed to 20\", it loses the Aircraft keyword and it loses all associated rules for being an Aircraft model. Models in Hover mode do not start the battle in Reserves, but you can choose to place them into Strategic Reserves following the normal rules if you wish."
+      },
+      "Ability§Ignores Cover": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "Each time an attack is made with this weapon, the target cannot have the Benefit of Cover against that attack."
+      },
+      "Ability§Indirect Fire": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "* Can target and make attacks against units that are not visible to the attacking unit.\n* If no models are visible in a target unit when\nit is selected, then when making an attack against that target with an Indirect Fire weapon, subtract 1 from that attack’s Hit roll and the target has the Benefit of Cover against that attack."
+      },
+      "Ability§Infiltrators": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "text": "During deployment, if every model in a unit has this ability, then when you set it up, it can be set up anywhere on the battlefield that is more than 9\" horizontally away from the enemy deployment zone and all enemy models."
+      },
+      "Ability§Invulnerable": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "text": "* Never modified by an attack’s AP.\n* The controlling player can choose to use either a model’s invulnerable save or its Save characteristic."
+      },
+      "Ability§Lance": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "Each time an attack is made with this weapon, if the bearer made a Charge move this turn, add 1 to that attack’s Wound roll."
+      },
+      "Ability§Leader": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "text": "* Before the battle, Character units with the Leader ability can be attached to one of their Bodyguard units to form an Attached unit.\n* Attached units can only contain one Leader.\n* Attacks cannot be allocated to Character\nmodels in Attached units."
+      },
+      "Ability§Lethal Hits": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "Each time an attack is made with this weapon, a Critical Hit automatically wounds the target."
+      },
+      "Ability§Lone Operative": {
+        "keywords": {
+          "Tags": [
+            "Core"
+          ],
+          "Keywords": [
+            "Model Ability"
+          ]
+        },
+        "text": "Unless part of an Attached unit, this unit can only be selected as the target of a ranged attack if \nthe attacking model is within 12\"."
+      },
+      "Ability§Melta": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "stats": {
+          "x": {
+            "text": "Increase the Damage by {t} when targeting units within half range."
+          }
+        }
+      },
+      "Ability§One Shot": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        }
+      },
+      "Ability§Pistol": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "* Can be shot even if the bearer’s unit is within Engagement Range of enemy units, but must target one of those enemy units.\n* Cannot be shot alongside any other non-Pistol weapon (except by a Monster or Vehicle)."
+      },
+      "Ability§Precision": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "When targeting an Attached unit, the attacking model’s player can have the attack allocated to a Character model in that unit visible to the bearer."
+      },
+      "Ability§Psychic": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "If a Psychic weapon or ability causes any unit to suffer one or more wounds, each of those wounds is considered to have been inflicted by a Psychic Attack."
+      },
+      "Ability§Rapid Fire": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "stats": {
+          "x": {
+            "text": "Increase the Attacks by {t} when targeting units within half range."
+          }
+        }
+      },
+      "Ability§Scouts": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "stats": {
+          "x": {
+            "text": "* Unit can make a Normal move of up to {t} before the first turn begins."
+          }
+        },
+        "text": "* If embarked in a Dedicated Transport, that Dedicated Transport can make this move instead.\n* Must end this move more than 9\" horizontally away from all enemy models."
+      },
+      "Ability§Stealth": {
+        "keywords": {
+          "Tags": [
+            "Core"
+          ],
+          "Keywords": [
+            "Model Ability"
+          ]
+        },
+        "text": "If every model in a unit has this ability, then each time \na ranged attack is made against it, subtract 1 from that \nattack’s Hit roll."
+      },
+      "Ability§Sustained Hits": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "stats": {
+          "x": {
+            "text": "Each Critical Hit scores {t} additional hits on the target."
+          }
+        }
+      },
+      "Ability§Torrent": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "Each time an attack is made with this weapon, that attack automatically hits the target."
+      },
+      "Ability§Transport": {
+        "keywords": {
+          "Keywords": [
+            "Model Ability"
+          ],
+          "Tags": [
+            "Core"
+          ]
+        },
+        "text": "* A unit can embark within a friendly Transport if all of its models end a Normal, Advance or Fall Back move within 3\" of that Transport.\n* A unit cannot embark and disembark in the same phase.\n* Units that start your Movement phase embarked within a Transport can disembark this phase, provided their Transport has not Advanced or Fallen Back.\n* If a unit disembarks before its Transport moves, it can act normally.\n* If a unit disembarks after its Transport moves, it cannot move or charge this turn, but can otherwise act normally.\n* Disembarking units must be set up wholly within 3\" of their Transport and not within Engagement Range of any enemy models (or the unit cannot disembark).\n* Units that disembark this turn cannot Remain Stationary.\n* If a Transport is destroyed, any embarked units must disembark.\n* Roll one D6 for each model that disembarks: for each 1, that model’s unit suffers 1 mortal wound.\n* Until the start of its controlling player’s next Boss Time, the disembarking unit\nis Battle-shocked.\n* Until the end of the turn, the disembarking unit counts as having made a Normal move, and cannot declare a charge.\n* Units disembarking a destroyed Transport that cannot be set up wholly within 3\" of it must perform an Emergency Disembarkation:\n  * Must be set up wholly within 6\" of it instead of wholly within 3\".\n  * Suffer 1 mortal wound for each roll of 1-3, instead of each roll of 1.\n  * Any disembarking model that cannot be set up is destroyed."
+      },
+      "Ability§Twin-linked": {
+        "keywords": {
+          "Keywords": [
+            "Weapon Ability"
+          ]
+        },
+        "text": "Each time an attack is made with this weapon, you can re-roll that attack’s Wound roll."
+      },
+      "Order of Battle§Order of Battle": {},
+      "Roster§Army": {
+        "allowed": {
+          "classifications": [
+            "Character",
+            "Infantry/Mounted",
+            "Vehicle",
+            "Unit"
+          ]
+        },
+        "aspects": {
+          "Collapse": true,
+          "Describe": true,
+          "Lock Qty": true,
+          "Rename": true,
+          "Type": "conceptual",
+          "Unique": true
+        },
+        "assets": {
+          "traits": [
+            "Stratagems§Stratagems"
+          ]
+        },
+        "constraints": {
+          "any": [],
+          "none": []
+        },
+        "keywords": {
+          "Tags": [
+            "noTally"
+          ]
+        },
+        "rules": {
+          "allowFaction": {
+            "actions": [
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "constraints",
+                    "any"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Faction",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "ally1Selected": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Ally 1 Points",
+                    "visibility"
+                  ]
+                ],
+                "value": "always"
+              },
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "constraints",
+                    "any"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Allied faction 1",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Allied faction 1",
+                    "value"
+                  ]
+                ],
+                "value": "-"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 50
+          },
+          "ally2Selected": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Ally 2 Points",
+                    "visibility"
+                  ]
+                ],
+                "value": "always"
+              },
+              {
+                "actionType": "add",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "constraints",
+                    "any"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Allied faction 2",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Allied faction 2",
+                    "value"
+                  ]
+                ],
+                "value": "-"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 50
+          },
+          "assumeNoDataIfNoFaction": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "text"
+                  ]
+                ],
+                "value": "You're trying to make a roster from the base 40k manifest. You (currently) need a faction manifest in order to create an army list. If you haven't imported a faction manifest yet, you can do so from the “Library” tab: <span class=\"mdi mdi-bookshelf\">. Click “Import” <span class=\"font-layer ng-star-inserted\"><i class=\"mdi mdi-folder-outline ng-star-inserted\"></i><i class=\"mdi mdi-arrow-right-thick ng-star-inserted\" style=\"left: -20%; top: 5%; transform: scale(0.5);\"></i></span> and select the desired manifest."
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Faction",
+                    "value"
+                  ]
+                ],
+                "value": "-"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          },
+          "preventDuplicateAllies": {
+            "actions": [
+              {
+                "actionType": "remove",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Allied faction 2",
+                    "ranks"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Allied faction 1",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Allied faction 1",
+                    "value"
+                  ]
+                ],
+                "value": "-"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 50
+          },
+          "preventDuplicateFactions": {
+            "actions": [
+              {
+                "actionType": "remove",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Allied faction 1",
+                    "ranks"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Faction",
+                  "value"
+                ]
+              },
+              {
+                "actionType": "remove",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Allied faction 2",
+                    "ranks"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "stats",
+                  "Faction",
+                  "value"
+                ]
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": true,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Faction",
+                    "value"
+                  ]
+                ],
+                "value": "-"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass",
+            "order": 50
+          },
+          "Select your Warlord.": {
+            "evals": [
+              {
+                "actionable": true,
+                "min": 1,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "tracked",
+                    "Warlord"
+                  ]
+                ]
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "warning"
+          },
+          "setMaxes": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Points",
+                    "max"
+                  ]
+                ],
+                "value": [
+                  "{self}",
+                  "tracked",
+                  "maxPoints"
+                ]
+              }
+            ],
+            "evals": [],
+            "evaluate": "OR",
+            "failState": "pass",
+            "order": 1
+          },
+          "useCrusade": {
+            "actions": [
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Crusade Pts",
+                    "visibility"
+                  ]
+                ],
+                "value": "always"
+              },
+              {
+                "actionType": "set",
+                "iterations": 1,
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Faction Group",
+                    "visibility"
+                  ]
+                ],
+                "value": "normal"
+              }
+            ],
+            "evals": [
+              {
+                "actionable": true,
+                "not": false,
+                "operator": "AND",
+                "paths": [
+                  [
+                    "{self}",
+                    "stats",
+                    "Play",
+                    "value"
+                  ]
+                ],
+                "value": "Narrative"
+              }
+            ],
+            "evaluate": "AND",
+            "failState": "pass"
+          }
+        },
+        "stats": {
+          "Allied faction 1": {
+            "ranks": {
+              "-": {
+                "order": 0
+              }
+            },
+            "statOrder": 5,
+            "statType": "rank",
+            "value": "-",
+            "visibility": "hidden"
+          },
+          "Allied faction 2": {
+            "ranks": {
+              "-": {
+                "order": 0
+              }
+            },
+            "statOrder": 6,
+            "statType": "rank",
+            "value": "-",
+            "visibility": "hidden"
+          },
+          "Ally 1 Points": {
+            "group": "Cost",
+            "groupOrder": 0,
+            "statOrder": 2,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "Ally 2 Points": {
+            "group": "Cost",
+            "groupOrder": 0,
+            "statOrder": 3,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "Battle Size": {
+            "dynamic": true,
+            "increment": {},
+            "ranks": {
+              "-": {
+                "format": "-",
+                "order": 0
+              },
+              "Combat Patrol": {
+                "format": "Combat Patrol",
+                "order": 1,
+                "tracking": {
+                  "maxPoints": 500
+                }
+              },
+              "Incursion": {
+                "format": "Incursion",
+                "order": 2,
+                "tracking": {
+                  "maxPoints": 1000
+                }
+              },
+              "Onslaught": {
+                "format": "Onslaught",
+                "order": 4,
+                "tracking": {
+                  "maxPoints": 3000
+                }
+              },
+              "Strike Force": {
+                "format": "Strike Force",
+                "order": 3,
+                "tracking": {
+                  "maxPoints": 2000
+                }
+              }
+            },
+            "statOrder": 1,
+            "statType": "rank",
+            "value": "Strike Force",
+            "visibility": "normal"
+          },
+          "Character": {
+            "min": 1,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "Detachment": {
+            "dynamic": true,
+            "ranks": {
+              "-": {
+                "order": 0
+              }
+            },
+            "statOrder": 4,
+            "statType": "rank",
+            "value": "-",
+            "visibility": "normal"
+          },
+          "Enhancement": {
+            "max": 3,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "hidden"
+          },
+          "Faction": {
+            "dynamic": true,
+            "ranks": {
+              "-": {
+                "order": 0
+              }
+            },
+            "statOrder": 3,
+            "statType": "rank",
+            "value": "-",
+            "visibility": "always"
+          },
+          "Faction Group": {
+            "dynamic": true,
+            "ranks": {
+              "-": {
+                "order": 0
+              },
+              "Chaos": {
+                "order": 2,
+                "term": "Chaos Faction"
+              },
+              "Imperium": {
+                "order": 1,
+                "term": "Imperium Faction"
+              },
+              "Xenos": {
+                "order": 3,
+                "term": "Xenos Faction"
+              }
+            },
+            "statOrder": 2,
+            "statType": "rank",
+            "value": "-",
+            "visibility": "normal"
+          },
+          "Mission": {
+            "dynamic": true,
+            "ranks": {
+              "-": {
+                "order": 0
+              },
+              "Leviathan": {
+                "order": 1
+              }
+            },
+            "statOrder": 8,
+            "statType": "rank",
+            "tracked": false,
+            "value": "Leviathan",
+            "visibility": "normal"
+          },
+          "Play": {
+            "ranks": {
+              "Matched": {
+                "order": 0
+              },
+              "Narrative": {
+                "order": 1
+              }
+            },
+            "statOrder": 7,
+            "statType": "rank",
+            "value": "Matched",
+            "visibility": "normal"
+          },
+          "Points": {
+            "group": "Cost",
+            "groupOrder": 0,
+            "statOrder": 1,
+            "statType": "numeric",
+            "tracked": true,
+            "value": 0,
+            "visibility": "normal"
+          }
+        }
+      },
+      "Stratagem§Command Re-roll": {
+        "keywords": {
+          "Keywords": [
+            "Core"
+          ],
+          "Category": [
+            "Battle Tactic"
+          ],
+          "Phase": [
+            "Any"
+          ],
+          "Turn": [
+            "Opponent’s",
+            "Yours"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        },
+        "text": "**WHEN:** In any phase, just after you have made a Hit\nroll, a Wound roll, a Damage roll, a saving throw, an\nAdvance roll, a Charge roll, a Desperate Escape test,\na Hazardous test, or just after you have rolled the\ndice to determine the number of attacks made with a\nweapon, for an attack, model or unit from your army.\n\n**EFFECT:** You re-roll that roll, test or saving throw."
+      },
+      "Stratagem§Counter-offensive": {
+        "keywords": {
+          "Category": [
+            "Strategic Ploy"
+          ],
+          "Turn": [
+            "Opponent’s",
+            "Yours"
+          ],
+          "Phase": [
+            "Fight"
+          ],
+          "Keywords": [
+            "Core"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 2
+          }
+        },
+        "text": "**WHEN:** Fight phase, just after an enemy unit\nhas fought.\n\n**TARGET:** One unit from your army that is within\nEngagement Range of one or more enemy units\nand that has not already been selected to fight\nthis phase.\n\n**EFFECT:** Your unit fights next."
+      },
+      "Stratagem§Epic Challenge": {
+        "keywords": {
+          "Keywords": [
+            "Core"
+          ],
+          "Phase": [
+            "Fight"
+          ],
+          "Category": [
+            "Epic Deed"
+          ],
+          "Turn": [
+            "Opponent’s",
+            "Yours"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        }
+      },
+      "Stratagem§Fire Overwatch": {
+        "keywords": {
+          "Phase": [
+            "Charge",
+            "Movement"
+          ],
+          "Category": [
+            "Strategic Ploy"
+          ],
+          "Turn": [
+            "Opponent’s"
+          ],
+          "Keywords": [
+            "Core"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        },
+        "text": "**WHEN:** Your opponent’s Movement or Charge phase,\njust after an enemy unit is set up or when an enemy\nunit starts or ends a Normal, Advance, Fall Back or\nCharge move.\n\n**TARGET:** One unit from your army that is within 24\" of\nthat enemy unit and that would be eligible to shoot if\nit were your Shooting phase.\n\n**EFFECT:** Your unit can shoot that enemy unit as if it\nwere your Shooting phase.\n\n**RESTRICTIONS:** Until the end of the phase, each\ntime a model in your unit makes a ranged attack,\nan unmodified Hit roll of 6 is required to score a hit,\nirrespective of the attacking weapon’s Ballistic Skill\nor any modifiers. You can only use this Stratagem\nonce per turn."
+      },
+      "Stratagem§Go to Ground": {
+        "keywords": {
+          "Keywords": [
+            "Core"
+          ],
+          "Phase": [
+            "Shooting"
+          ],
+          "Turn": [
+            "Opponent’s"
+          ],
+          "Category": [
+            "Battle Tactic"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        },
+        "text": "**WHEN:** Your opponent’s Shooting phase, just after an\nenemy unit has selected its targets.\n\n**TARGET:** One Infantry unit from your army that was\nselected as the target of one or more of the attacking\nunit’s attacks.\n\n**EFFECT:** Until the end of the phase, all models in\nyour unit have a 6+ invulnerable save and have the\nBenefit of Cover (pg 44)."
+      },
+      "Stratagem§Grenade": {
+        "keywords": {
+          "Keywords": [
+            "Core"
+          ],
+          "Category": [
+            "Wargear"
+          ],
+          "Phase": [
+            "Shooting"
+          ],
+          "Turn": [
+            "Yours"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        },
+        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Grenades unit from your army that is\nnot within Engagement Range of any enemy units\nand has not been selected to shoot this phase.\n\n**EFFECT:** Select one enemy unit that is not within\nEngagement Range of any units from your army and\nis within 8\" of and visible to your Grenades unit.\nRoll six D6: for each 4+, that enemy unit suffers 1\nmortal wound."
+      },
+      "Stratagem§Heroic Intervention": {
+        "keywords": {
+          "Keywords": [
+            "Core"
+          ],
+          "Phase": [
+            "Charge"
+          ],
+          "Category": [
+            "Strategic Ploy"
+          ],
+          "Turn": [
+            "Opponent’s"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 2
+          }
+        },
+        "text": "**WHEN:** Your opponent’s Charge phase, just after an\nenemy unit ends a Charge move.\n\n**TARGET:** One unit from your army that is within 6\"\nof that enemy unit and would be eligible to declare\na charge against that enemy unit if it were your\nCharge phase.\n\n**EFFECT:** Your unit now declares a charge that targets\nonly that enemy unit, and you resolve that charge as\nif it were your Charge phase.\n\n**RESTRICTIONS:** You can only select a Vehicle unit\nfrom your army if it is a Walker. Note that even if\nthis charge is successful, your unit does not receive\nany Charge bonus this turn (pg 29)."
+      },
+      "Stratagem§Insane Bravery": {
+        "keywords": {
+          "Turn": [
+            "Yours"
+          ],
+          "Keywords": [
+            "Core"
+          ],
+          "Phase": [
+            "Command"
+          ],
+          "Category": [
+            "Epic Deed"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        },
+        "text": "**WHEN:** Battle-shock step of your Boss Time,\njust after you have failed a Battle-shock test taken\nfor a unit from your army (pg 11).\n\n**TARGET:** The unit from your army that Battle-shock\ntest was just taken for (even though your\nBattle-shocked units cannot normally be affected by\nyour Stratagems).\n\n**EFFECT:** Your unit is treated as having passed that\ntest instead, and is not Battle-shocked as a result."
+      },
+      "Stratagem§Rapid Ingress": {
+        "keywords": {
+          "Keywords": [
+            "Core"
+          ],
+          "Phase": [
+            "Movement"
+          ],
+          "Category": [
+            "Strategic Ploy"
+          ],
+          "Turn": [
+            "Opponent’s"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        },
+        "text": "**WHEN:** End of your opponent’s Movement phase.\n\n**TARGET:** One unit from your army that is in Reserves.\n\n**EFFECT:** Your unit can arrive on the battlefield\nas if it were the Reinforcements step of your\nMovement phase.\n\n**RESTRICTIONS:** You cannot use this Stratagem to\nenable a unit to arrive on the battlefield during a\nbattle round it would not normally be able to do so in."
+      },
+      "Stratagem§Smokescreen": {
+        "keywords": {
+          "Keywords": [
+            "Core"
+          ],
+          "Phase": [
+            "Shooting"
+          ],
+          "Category": [
+            "Wargear"
+          ],
+          "Turn": [
+            "Opponent’s"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        },
+        "text": "**WHEN:** Your opponent’s Shooting phase, just after an enemy unit has selected its targets.\n\n**TARGET:** One Smoke unit from your army that was selected as the target of one or more of the attacking unit’s attacks.\n\n**EFFECT:** Until the end of the phase, all models in your unit have the Benefit of Cover (pg 44) and the Stealth ability (pg 20)."
+      },
+      "Stratagem§Tank Shock": {
+        "keywords": {
+          "Keywords": [
+            "Core"
+          ],
+          "Phase": [
+            "Charge"
+          ],
+          "Category": [
+            "Strategic Ploy"
+          ],
+          "Turn": [
+            "Yours"
+          ]
+        },
+        "stats": {
+          "Command Cost": {
+            "value": 1
+          }
+        }
+      },
+      "Stratagems§Stratagems": {}
+    },
+    "gameModes": {},
+    "theme": {}
+  }
+}
