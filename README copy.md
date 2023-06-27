@@ -1,94 +1,93 @@
-# WH40k10e Manifest
+# Demo Dependency Manifest
 
-If you're going to author stuff for 40k, it's wise to make it similar in structure to other elements of the 40k manifest.
+If you're going to author stuff for SpaceFight, it's wise to make it similar in structure to other elements of the SpaceFight manifest.
 
-## 40k10Core
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Warhammer_40k_10e.manifes
+## Core Dependency
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo Dependency.manifest
 
-## Imperium
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Imperium.manifes
+## Future Fascists
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Imperium.manifest
 
-## Chaos
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos.manifes
+## Angry Mutants
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos.manifest
 
-### Space_Marines
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Marines.manifes
+### Fascit Idealists
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Marines.manifest
 
-### SM_Black_Templars
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Black_Templars.manifes
+### Space Crusaders
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Black_Templars.manifest
 
-### SM_Blood_Angels
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Blood_Angels.manifes
+### Vampires but Nice...in Space
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Blood_Angels.manifest
 
-### SM_Dark_Angels
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Dark_Angels.manifes
+### Emo Crusaders
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Dark_Angels.manifest
 
-### SM_Deathwatch
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Deathwatch.manifes
+### Angry Prison Guards
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Deathwatch.manifest
 
-### SM_Space_Wolves
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Space_Wolves.manifes
+### Space Vikings
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Space_Wolves.manifest
 
-### Adepta_Sororitas
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Adepta_Sororitas.manifes
+### BangPew Sorority
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Adepta_Sororitas.manifest
 
-### Adeptus_Custodes
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Adeptus_Custodes.manifes
+### Golden Bananas
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Adeptus_Custodes.manifest
 
-### Adeptus_Mechanicus
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Adeptus_Mechanicus.manifes
+### Toaster Fetishists
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Adeptus_Mechanicus.manifest
 
-### Astra_Militarum
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Astra_Militarum.manifes
+### The Army but future
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Astra_Militarum.manifest
 
-### Grey_Knights
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Grey_Knights.manifes
+### Psychic Genocide Dream Team
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Grey_Knights.manifest
 
-### Imperial_Agents
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Imperial_Agents.manifes
+### Sneaky Dudes
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Imperial_Agents.manifest
 
-### Imperial_Knights
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Imperial_Knights.manifes
+### Big Stompy Robots
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Imperial_Knights.manifest
 
-### Chaos_Space_Marines
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos_Space_Marines.manifes
+### Future Anarchists
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos_Space_Marines.manifest
 
-### Chaos_Knights
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos_Knights.manifes
+### Big Stompy Anarchist Robots
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos_Knights.manifest
 
-### Chaos_Daemons
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos_Daemons.manifes
+### Scary Nightmare Things
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos_Daemons.manifest
 
-### Death_Guard
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Death_Guard.manifes
+### Sick dudes
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Death_Guard.manifest
 
-### Thousand_Sons
+### Dust II in Space
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Thousand_Sons.manifest
 
-### World_Eaters
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/World_Eaters.manifes
+### Planet Munchers
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/World_Eaters.manifest
 
-### Aeldari
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Aeldari.manifes
+### Space Elves
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Aeldari.manifest
 
-### Drukhari
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Drukhari.manifes
+### Space Dark Elves
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Drukhari.manifest
 
-### Leagues_of_Votann
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Leagues_of_Votann.manifest
+### Space Dorfs
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo Manifest.manifest
 
-### Necrons
+### Undead Robot Jerks
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Necrons.manifest
 
-### Orks
+### Angry Mushrooms
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Orks.manifest
 
-### T'au
+### Communist Fish People
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/T'au_Empire.manifest
 
-### Tyranids
+### Hungry Hungry Hippos
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Tyranids.manifest
 
-### Genestealer Cults
-
+### People who pet hippos
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Genestealer_Cults.manifest
