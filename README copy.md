@@ -11,13 +11,13 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 ## Angry Mutants
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos.manifest
 
-### Fascit Idealists
+### Fascist Idealists
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Marines.manifest
 
 ### Space Crusaders
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Black_Templars.manifest
 
-### Vampires but Nice...in Space
+### Vampires but in Space
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SM_Blood_Angels.manifest
 
 ### Emo Crusaders
