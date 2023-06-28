@@ -412,7 +412,7 @@
         },
         "text": "done\nIf this unit’s Thinkydorf model is ever destroyed, all of this unit’s remaining \nCORV models are also destroyed."
       },
-      "Character§Kâhl": {
+      "Character§BossDorf": {
         "allowed": {
           "items": []
         },
@@ -554,7 +554,7 @@
         },
         "text": ""
       },
-      "Character§Ûthar The Destined": {
+      "Character§Bossdorf the Epic": {
         "aspects": {
           "Unique": true
         },
