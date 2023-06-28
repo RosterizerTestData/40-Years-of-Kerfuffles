@@ -5,13 +5,13 @@ If you're going to author stuff for SpaceFight, it's wise to make it similar in 
 ## Core Dependency
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Dependency.manifes
 
-## Future Fascists
+## Future Authoritarians
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Imperium.manifes
 
 ## Angry Mutants
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Chaos.manifes
 
-### Fascist Idealists
+### Authoritarian Idealists
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Marines.manifes
 
 ### Space Crusaders
