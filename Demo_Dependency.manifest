@@ -1,10 +1,10 @@
 {
   "name": "Demo Dependency",
   "revision": "10.1.13",
-  "game": "Spacefight 40,000",
+  "game": "40 Years of Kerfuffles",
   "genre": "sci-fi",
   "publisher": "Nonspecific Games Company",
-  "url": "https://Spacefight40000.com/",
+  "url": "https://40-Years-of-Kerfuffles.com/",
   "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution.",
   "wip": true,
   "dependencies": [],

@@ -1,12 +1,12 @@
-# Demo Dependency manifes
+# Demo Dependency manifest
 
 If you're going to author stuff for SpaceFight, it's wise to make it similar in structure to other elements of the SpaceFight manifes.
 
 ## Core Dependency
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Dependency.manifes
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Dependency.manifest
 
 ## Future Authoritarians
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.manifes
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.manifest
 
 ## Angry Mutants
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Angry_Mutants.manifes
@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Authoritarian_Idealists.manifes
 
 ### Space Crusaders
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.manifes
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.manifest
 
 ### Vampires but in Space
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Vampires_but_in_Space.manifes
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dark_Elves.manifes
 
 ### Space Dorfs
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Manifest.manifes
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Manifest.manifest
 
 ### Undead Robot Jerks
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Undead_Robot_Jerks.manifes

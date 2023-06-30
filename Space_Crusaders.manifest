@@ -1,17 +1,18 @@
 {
-  "name": "Grey Knights",
+  "name": "Space Crusaders",
   "revision": "10.1.5",
-  "game": "Warhammer 40k",
+  "game": "40 Years of Kerfuffles",
   "genre": "sci-fi",
   "publisher": "Games Workshop",
-  "url": "https://warhammer40000.com",
+  "url": "https://40-Years-of-Kerfuffles.com",
   "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
   "wip": true,
   "dependencies": [
     {
       "slug": "PVFM9U",
-      "name": "Imperium",
-      "game": "Warhammer 40,000"
+      "name": "Future Authoritarians",
+      "game": "40 Years of Kerfuffles",
+      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.manifest"
     }
   ],
   "manifest": {

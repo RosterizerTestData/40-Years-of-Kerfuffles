@@ -1,17 +1,17 @@
 {
   "name": "Space Army Soldiers",
   "revision": "10.3.3",
-  "game": "SpaceFight 40k",
+  "game": "40 Years of Kerfuffles",
   "genre": "sci-fi",
   "publisher": "Nonspecific Games Company",
-  "url": "https://SpaceFight40000.com",
+  "url": "https://40-Years-of-Kerfuffles.com",
   "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
   "wip": true,
   "dependencies": [
     {
       "slug": "M4P888",
       "name": "Demo Dependency",
-      "game": "SpaceFight 40,000"
+      "game": "40 Years of Kerfuffles"
     }
   ],
   "manifest": {
