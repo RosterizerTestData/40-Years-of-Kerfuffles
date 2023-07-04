@@ -18,7 +18,7 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.manifest
 
 ### Vampires but in Space
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/FA_Dust_Devils.manifes
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/FA_Dust_Devils.manifest
 
 ### Emo Crusaders
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Emo_Crusaders.manifes
