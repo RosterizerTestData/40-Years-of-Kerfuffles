@@ -3,10 +3,10 @@
 If you're going to author stuff for SpaceFight, it's wise to make it similar in structure to other elements of the SpaceFight manifes.
 
 ## Core Dependency
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Dependency.manifest
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Dependency.manifes
 
 ## Future Authoritarians
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.manifest
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.manifes
 
 ## Angry Mutants
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Angry_Mutants.manifes
@@ -15,10 +15,10 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Authoritarian_Idealists.manifes
 
 ### Space Crusaders
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.manifest
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.manifes
 
 ### Vampires but in Space
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/FA_Dust_Devils.manifest
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/FA_Dust_Devils.manifes
 
 ### Emo Crusaders
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Emo_Crusaders.manifes
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dark_Elves.manifes
 
 ### Space Dorfs
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dorfs.manifest
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dorfs.manifes
 
 ### Undead Robot Jerks
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Undead_Robot_Jerks.manifes
