@@ -6,7 +6,7 @@
   "publisher": "Nonspecific Games Company",
   "url": "https://40-Years-of-Kerfuffles.com",
   "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
-  "wip": true,
+  "wip": false,
   "dependencies": [
     {
       "slug": "M4P888",

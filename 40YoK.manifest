@@ -6,7 +6,7 @@
   "publisher": "Nonspecific Games Company",
   "url": "https://40-Years-of-Kerfuffles.com/",
   "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution.",
-  "wip": true,
+  "wip": false,
   "isModule": true,
   "dependencies": [],
   "manifest": {
