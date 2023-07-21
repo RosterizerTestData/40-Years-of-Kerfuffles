@@ -1,18 +1,18 @@
 {
-  "name": "Space Dorfs",
+  "name": "Space Army Soldiers",
   "revision": "10.3.3",
   "game": "40 Years of Kerfuffles",
   "genre": "sci-fi",
-  "publisher": "Games Workshop",
+  "publisher": "Nonspecific Games Company",
   "url": "https://40-Years-of-Kerfuffles.com",
   "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
   "wip": true,
   "dependencies": [
     {
       "slug": "M4P888",
-      "name": "Demo Dependency",
+      "name": "40YoK",
       "game": "40 Years of Kerfuffles",
-      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Dependency.manifest"
+      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/40YoK.manifest"
     }
   ],
   "manifest": {
@@ -34,7 +34,7 @@
         },
         "text": "Units can disembark from this Transport after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn."
       },
-      "Ability§Brôkhyr Iron-master Destroyed": {
+      "Ability§Engindorf Iron-master Destroyed": {
         "keywords": {
           "Keywords": [
             "Other"
@@ -42,13 +42,13 @@
         },
         "text": "If this unit’s Iron-master is ever destroyed, this unit’s Ironkyn Assistant and all remaining E-COGs are also destroyed."
       },
-      "Ability§Brôkhyr’s Guild": {
+      "Ability§Engindorf’s Guild": {
         "keywords": {
           "Keywords": [
             "Other"
           ]
         },
-        "text": "At the end of your Movement phase, this unit can repair one friendly Leagues of Votann Vehicle or Exo-frame model within 3″ of it. That model regains up to D3 lost wounds, or up to 3 lost wounds instead if this unit contains an Ironkyn Assistant. Each model can only be repaired once per turn."
+        "text": "At the end of your Movement phase, this unit can repair one friendly Space Army Soldiers Vehicle or Exo-frame model within 3″ of it. That model regains up to D3 lost wounds, or up to 3 lost wounds instead if this unit contains an Ironkyn Assistant. Each model can only be repaired once per turn."
       },
       "Ability§Conversion": {
         "text": "Each time an attack is made with this weapon, if the target is more than 12\" from the bearer, \nan unmodified successful Hit roll of 4+ scores a Critical Hit"
@@ -61,7 +61,7 @@
         },
         "text": "Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
       },
-      "Ability§Exemplar of the Einhyr": {
+      "Ability§Exemplar of the Tuffdorf": {
         "keywords": {
           "Keywords": [
             "Other"
@@ -75,7 +75,7 @@
             "Faction"
           ]
         },
-        "text": "If your Army Faction is Leagues of Votann, each time an enemy unit destroys a Leagues of Votann unit from your army, that enemy unit gains 1 Judgement token. An enemy unit can never have more than 2 Judgement tokens (any further Judgement tokens a unit would gain beyond this are ignored).\n\n\nEach time a model from your army with this ability makes an attack that targets a unit that has one or more Judgement tokens, until that model’s attacks have been resolved, apply the relevant bonus from the table below to that attack.\n\n| Judgement Tokens | Bonus |\n| ----------- | ----------- |\n| 1 | Eminent Threat: Add 1 to the Hit roll. |\n| 2 | Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1 to the Wound roll |\n\nDesigner’s Note: If a unit with Judgement tokens is removed from the battlefield, make a note of how many Judgement tokens it had when it was removed. If that unit is set up on the battlefield again, place \nthe corresponding number of Judgement tokens next to it. If a unit with Judgement tokens splits up into two or more smaller units, each of those units gains a number of Judgement tokens equal to that of the original unit. If two units combine to form a single larger unit and either of those units had Judgement tokens, make a note of how many the unit with the most has, just before they combine – the new unit has a number of Judgement tokens equal to this."
+        "text": "If your Army Faction is Space Army Soldiers, each time an enemy unit destroys a Space Army Soldiers unit from your army, that enemy unit gains 1 Angry Dot. An enemy unit can never have more than 2 Angry Dots (any further Angry Dots a unit would gain beyond this are ignored).\n\n\nEach time a model from your army with this ability makes an attack that targets a unit that has one or more Angry Dots, until that model’s attacks have been resolved, apply the relevant bonus from the table below to that attack.\n\n| Angry Dots | Bonus |\n| ----------- | ----------- |\n| 1 | Eminent Threat: Add 1 to the Hit roll. |\n| 2 | Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1 to the Wound roll |\n\nDesigner’s Note: If a unit with Angry Dots is removed from the battlefield, make a note of how many Angry Dots it had when it was removed. If that unit is set up on the battlefield again, place \nthe corresponding number of Angry Dots next to it. If a unit with Angry Dots splits up into two or more smaller units, each of those units gains a number of Angry Dots equal to that of the original unit. If two units combine to form a single larger unit and either of those units had Angry Dots, make a note of how many the unit with the most has, just before they combine – the new unit has a number of Angry Dots equal to this."
       },
       "Ability§Fire Support": {
         "keywords": {
@@ -99,17 +99,17 @@
             "Other"
           ]
         },
-        "text": "Once per battle round, in your Command phase, you can select one model from your army with this ability, then select one enemy unit that is visible to that model. That enemy unit gains 1 Judgement token."
+        "text": "Once per battle round, in your Boss Time, you can select one model from your army with this ability, then select one enemy unit that is visible to that model. That enemy unit gains 1 Angry Dot."
       },
-      "Ability§Grimnyr Destroyed": {
+      "Ability§Thinkydorf Destroyed": {
         "keywords": {
           "Keywords": [
             "Other"
           ]
         },
-        "text": "If this unit’s Grimnyr model is ever destroyed, all of this unit’s remaining CORV models are also destroyed."
+        "text": "If this unit’s Thinkydorf model is ever destroyed, all of this unit’s remaining CORV models are also destroyed."
       },
-      "Ability§Grimnyr’s Regard": {
+      "Ability§Thinkydorf’s Regard": {
         "keywords": {
           "Keywords": [
             "Other"
@@ -117,8 +117,8 @@
         },
         "text": "Once per battle, after this model’s unit fails a Battle-shock test, this model can use this ability. If it does, that unit is no longer Battle-shocked."
       },
-      "Ability§Hekaton Land Fortress": {
-        "text": "This model has a transport capacity of 12 Leagues of Votann Infantry models. Each Exo-armour model takes up the space of 2 models and each Exo-frame model takes up the space of 3 models."
+      "Ability§Heckinbig Land Fortress": {
+        "text": "This model has a transport capacity of 12 Space Army Soldiers Infantry models. Each Exo-armour model takes up the space of 2 models and each Exo-frame model takes up the space of 3 models."
       },
       "Ability§Kindred Hero": {
         "keywords": {
@@ -134,7 +134,7 @@
             "Other"
           ]
         },
-        "text": "At the end of your Command phase, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
+        "text": "At the end of your Boss Time, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn."
       },
       "Ability§Mass Driver Accelerators": {
         "keywords": {
@@ -152,7 +152,7 @@
         },
         "text": "While this model is leading a unit, each time a model in that unit makes a ranged attack, add 1 to the Hit roll."
       },
-      "Ability§Oathband Bodyguard": {
+      "Ability§Friendteam Bodyguard": {
         "keywords": {
           "Keywords": [
             "Other"
@@ -160,7 +160,7 @@
         },
         "text": "While a Character is leading this unit, each time an attack targets this unit, if the Strength characteristic of that attack is greater than this unit’s Toughness characteristic, subtract 1 from the Wound roll."
       },
-      "Ability§Oathband Covering Fire": {
+      "Ability§Friendteam Covering Fire": {
         "keywords": {
           "Keywords": [
             "Other"
@@ -179,8 +179,8 @@
         },
         "text": "At the end of your opponent’s turn, if this unit is within 6″ of any battlefield edge and is not within Engagement Range of any enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves."
       },
-      "Ability§Sagitaur": {
-        "text": "This model has a transport capacity of 6 Leagues of Votann Infantry models. It cannot transport Exo-armour or Exo-frame models.\n\nAt the start of the Declare Battle Formations step, you can select one Hearthkyn Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
+      "Ability§Spacehoss": {
+        "text": "This model has a transport capacity of 6 Space Army Soldiers Infantry models. It cannot transport Exo-armour or Exo-frame models.\n\nAt the start of the Declare Battle Formations step, you can select one Soldierdorf Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
       },
       "Ability§Scouts": {
         "stats": {
@@ -206,7 +206,7 @@
         },
         "text": "Each time an attack is allocated to this model, change the Damage characteristic of that attack to 1."
       },
-      "Character§Brôkhyr Iron-master": {
+      "Character§Engindorf Iron-master": {
         "allowed": {
           "items": []
         },
@@ -215,12 +215,12 @@
           "traits": [
             {
               "item": "Ability§Leader",
-              "text": "This unit can be attached to the following units:\n\n\n\n* Hearthkyn Warriors\n\n\n\n* Brôkhyr Thunderkyn"
+              "text": "This unit can be attached to the following units:\n\n\n\n* Soldierdorf Warriors\n\n\n\n* Engindorf Thunderkyn"
             },
             "Ability§Eye of the Ancestors",
             "Ability§Multispectral Visor",
-            "Ability§Brôkhyr’s Guild",
-            "Model§Brôkhyr Iron-master",
+            "Ability§Engindorf’s Guild",
+            "Model§Engindorf Iron-master",
             "Model§Ironkin Assistant",
             "Model§E-COG",
             {
@@ -239,19 +239,19 @@
                 }
               }
             },
-            "Ability§Brôkhyr Iron-master Destroyed"
+            "Ability§Engindorf Iron-master Destroyed"
           ]
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
           ],
           "Keywords": [
             "Infantry",
-            "Brôkhyr Iron-master"
+            "Engindorf Iron-master"
           ]
         },
         "stats": {
@@ -261,22 +261,22 @@
         },
         "text": ""
       },
-      "Character§Einhyr Champion": {
+      "Character§Tuffdorf Champion": {
         "assets": {
           "traits": [
             {
               "item": "Ability§Leader",
-              "text": "This model can be attached to the following unit:\n\n\n\n* Einhyr Hearthguard"
+              "text": "This model can be attached to the following unit:\n\n\n\n* Tuffdorf Hearthguard"
             },
             "Ability§Eye of the Ancestors",
-            "Ability§Exemplar of the Einhyr",
+            "Ability§Exemplar of the Tuffdorf",
             "Ability§Mass Driver Accelerators",
-            "Ranged Weapon§Einhyr Champion—Autoch-pattern combi-bolter"
+            "Ranged Weapon§Tuffdorf Champion—Smart-pattern combi-bolter"
           ]
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -285,7 +285,7 @@
             "Infantry",
             "Character",
             "Exo-armour",
-            "Einhyr Champion"
+            "Tuffdorf Champion"
           ]
         },
         "stats": {
@@ -300,11 +300,11 @@
             "group": "Loadout",
             "groupOrder": 2,
             "ranks": {
-              "Darkstar axe": {
+              "Starmetal axe": {
                 "order": 1,
                 "traits": [
                   {
-                    "trait": "Melee Weapon§Einhyr Champion—Darkstar axe"
+                    "trait": "Melee Weapon§Tuffdorf Champion—Starmetal axe"
                   }
                 ]
               },
@@ -312,7 +312,7 @@
                 "order": 0,
                 "traits": [
                   {
-                    "trait": "Melee Weapon§Einhyr Champion—Mass hammer"
+                    "trait": "Melee Weapon§Tuffdorf Champion—Mass hammer"
                   }
                 ]
               }
@@ -366,7 +366,7 @@
         },
         "text": ""
       },
-      "Character§Grimnyr": {
+      "Character§Thinkydorf": {
         "allowed": {
           "items": []
         },
@@ -375,11 +375,11 @@
           "traits": [
             {
               "item": "Ability§Leader",
-              "text": "This unit can be attached to the following unit:\n\n\n\n* Hearthkyn Warriors"
+              "text": "This unit can be attached to the following unit:\n\n\n\n* Soldierdorf Warriors"
             },
             "Ability§Eye of the Ancestors",
             "Ability§Fortify (psychic)",
-            "Ability§Grimnyr’s Regard",
+            "Ability§Thinkydorf’s Regard",
             {
               "item": "Ability§Invulnerable",
               "stats": {
@@ -388,22 +388,22 @@
                 }
               }
             },
-            "Model§Grimnyr",
+            "Model§Thinkydorf",
             "Model§CORV",
             "Model§CORV",
-            "Ability§Grimnyr Destroyed"
+            "Ability§Thinkydorf Destroyed"
           ]
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
           ],
           "Keywords": [
             "Infantry",
-            "Grimnyr"
+            "Thinkydorf"
           ]
         },
         "stats": {
@@ -411,9 +411,9 @@
             "value": 75
           }
         },
-        "text": "done\nIf this unit’s Grimnyr model is ever destroyed, all of this unit’s remaining \nCORV models are also destroyed."
+        "text": "done\nIf this unit’s Thinkydorf model is ever destroyed, all of this unit’s remaining \nCORV models are also destroyed."
       },
-      "Character§Kâhl": {
+      "Character§BossDorf": {
         "allowed": {
           "items": []
         },
@@ -421,7 +421,7 @@
           "traits": [
             {
               "item": "Ability§Leader",
-              "text": "This model can be attached to the following units:\n\n\n\n* Einhyr Hearthguard\n\n\n\n* Hearthkyn Warriors"
+              "text": "This model can be attached to the following units:\n\n\n\n* Tuffdorf Hearthguard\n\n\n\n* Soldierdorf Warriors"
             },
             "Ability§Eye of the Ancestors",
             "Ability§Kindred Hero",
@@ -438,7 +438,7 @@
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -494,11 +494,11 @@
             "group": "Loadout",
             "groupOrder": 2,
             "ranks": {
-              "Autoch-pattern combi-bolter": {
+              "Smart-pattern combi-bolter": {
                 "order": 0,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Kâhl—Autoch-pattern combi-bolter"
+                    "trait": "Ranged Weapon§Kâhl—Smart-pattern combi-bolter"
                   }
                 ]
               },
@@ -513,7 +513,7 @@
             },
             "statOrder": 1,
             "statType": "rank",
-            "value": "Autoch-pattern combi-bolter",
+            "value": "Smart-pattern combi-bolter",
             "visibility": "active"
           },
           "Sv": {
@@ -555,7 +555,7 @@
         },
         "text": ""
       },
-      "Character§Ûthar The Destined": {
+      "Character§Bossdorf the Epic": {
         "aspects": {
           "Unique": true
         },
@@ -563,7 +563,7 @@
           "traits": [
             {
               "item": "Ability§Leader",
-              "text": "This model can be attached to the following units:\n\n\n\n* Einhyr Hearthguard\n\n\n\n* Hearthkyn Warriors"
+              "text": "This model can be attached to the following units:\n\n\n\n* Tuffdorf Hearthguard\n\n\n\n* Soldierdorf Warriors"
             },
             "Ability§Eye of the Ancestors",
             "Ability§Ancestral Fortune",
@@ -584,7 +584,7 @@
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -621,7 +621,7 @@
         },
         "text": ""
       },
-      "Detachment§Oathband": {
+      "Detachment§Friendteam": {
         "rules": {
           "addStratagems": {
             "actions": [
@@ -715,12 +715,12 @@
             "failState": "pass"
           }
         },
-        "text": "## RUTHLESS EFFICIENCY\n\nAt the start of the battle, select one unit from your opponent’s army. That unit starts the battle with 2 Judgement tokens (see Eye of the Ancestors).\n\nIf, at the start of any of your Command phases, that enemy unit is destroyed, you gain a number of CP depending on how early in the battle you destroyed it, as shown below (you can only gain CP in this way once per battle, and CP gained in this way are an exemption to the Core Rules that limit the maximum number of CP you can gain per battle round to 1).\n\n**Unit destroyed by the start of your first or second Command phase:** You gain 3CP\n\n**Unit destroyed by the start of your third or fouth Command phase:** You gain 2CP\n\n**Unit destroyed by the start of your fifth Command phase:** You gain 1CP"
+        "text": "## RUTHLESS EFFICIENCY\n\nAt the start of the battle, select one unit from your opponent’s army. That unit starts the battle with 2 Angry Dots (see Eye of the Ancestors).\n\nIf, at the start of any of your Boss Times, that enemy unit is destroyed, you gain a number of CP depending on how early in the battle you destroyed it, as shown below (you can only gain CP in this way once per battle, and CP gained in this way are an exemption to the Core Rules that limit the maximum number of CP you can gain per battle round to 1).\n\n**Unit destroyed by the start of your first or second Boss Time:** You gain 3CP\n\n**Unit destroyed by the start of your third or fouth Boss Time:** You gain 2CP\n\n**Unit destroyed by the start of your fifth Boss Time:** You gain 1CP"
       },
       "Enhancement§A Long List": {
         "keywords": {
           "Keywords": [
-            "Oathband"
+            "Friendteam"
           ]
         },
         "stats": {
@@ -728,12 +728,12 @@
             "value": 15
           }
         },
-        "text": "Leagues of Votann model only. Each time the bearer’s unit destroys an enemy unit, if that enemy unit has one or more Judgement tokens, you can select one other enemy unit that is visible to the bearer. That other unit gains one Judgement token."
+        "text": "Space Army Soldiers model only. Each time the bearer’s unit destroys an enemy unit, if that enemy unit has one or more Angry Dots, you can select one other enemy unit that is visible to the bearer. That other unit gains one Angry Dot."
       },
       "Enhancement§Appraising Glare": {
         "keywords": {
           "Keywords": [
-            "Oathband"
+            "Friendteam"
           ]
         },
         "stats": {
@@ -741,12 +741,12 @@
             "value": 20
           }
         },
-        "text": "Leagues of Votann model only. In your Command phase, you can select one objective marker your opponent controls. Until the end of the phase, while an enemy unit is within range of that objective marker, it counts as having one more Judgement token than it actually has (to a maximum of 2)."
+        "text": "Space Army Soldiers model only. In your Boss Time, you can select one objective marker your opponent controls. Until the end of the phase, while an enemy unit is within range of that objective marker, it counts as having one more Angry Dot than it actually has (to a maximum of 2)."
       },
       "Enhancement§Grim Demeanour": {
         "keywords": {
           "Keywords": [
-            "Oathband"
+            "Friendteam"
           ]
         },
         "stats": {
@@ -754,12 +754,12 @@
             "value": 20
           }
         },
-        "text": "Leagues of Votann model only. You can re-roll Battle-shock tests taken for the bearer’s unit, and models in that unit can ignore any or all modifiers to their characteristics and/or to any rolls or tests made for them (excluding modifiers to saving throws)."
+        "text": "Space Army Soldiers model only. You can re-roll Battle-shock tests taken for the bearer’s unit, and models in that unit can ignore any or all modifiers to their characteristics and/or to any rolls or tests made for them (excluding modifiers to saving throws)."
       },
       "Enhancement§Wayfarer's Grace": {
         "keywords": {
           "Keywords": [
-            "Oathband"
+            "Friendteam"
           ]
         },
         "stats": {
@@ -767,9 +767,9 @@
             "value": 25
           }
         },
-        "text": "Leagues of Votann model only. The first time the bearer is destroyed, after placing a Judgement token next to the unit that destroyed it, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+        "text": "Space Army Soldiers model only. The first time the bearer is destroyed, after placing a Angry Dot next to the unit that destroyed it, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
       },
-      "Melee Weapon§Brôkhyr Iron-master—Close combat weapon": {
+      "Melee Weapon§Engindorf Iron-master—Close combat weapon": {
         "stats": {
           "A": {
             "value": 1
@@ -795,7 +795,7 @@
           }
         }
       },
-      "Melee Weapon§Brôkhyr Iron-master—Graviton hammer": {
+      "Melee Weapon§Engindorf Iron-master—Graviton hammer": {
         "assets": {
           "traits": [
             {
@@ -836,7 +836,7 @@
           }
         }
       },
-      "Melee Weapon§Brôkhyr Iron-master—Manipulator arms": {
+      "Melee Weapon§Engindorf Iron-master—Manipulator arms": {
         "stats": {
           "A": {
             "value": 3
@@ -862,7 +862,7 @@
           }
         }
       },
-      "Melee Weapon§Brôkhyr Iron-master—Plasma torch": {
+      "Melee Weapon§Engindorf Iron-master—Plasma torch": {
         "stats": {
           "A": {
             "value": 1
@@ -888,7 +888,7 @@
           }
         }
       },
-      "Melee Weapon§Brôkhyr Thunderkyn—Close combat weapon": {
+      "Melee Weapon§Engindorf Thunderkyn—Close combat weapon": {
         "stats": {
           "A": {
             "value": 2
@@ -914,7 +914,7 @@
           }
         }
       },
-      "Melee Weapon§Cthonian Beserks—Concussion maul": {
+      "Melee Weapon§Diggydorf Beserks—Concussion maul": {
         "stats": {
           "A": {
             "value": 3
@@ -940,7 +940,7 @@
           }
         }
       },
-      "Melee Weapon§Cthonian Beserks—Heavy plasma axe – strike": {
+      "Melee Weapon§Diggydorf Beserks—Heavy plasma axe – strike": {
         "stats": {
           "A": {
             "value": 3
@@ -966,7 +966,7 @@
           }
         }
       },
-      "Melee Weapon§Cthonian Beserks—Heavy plasma axe – sweep": {
+      "Melee Weapon§Diggydorf Beserks—Heavy plasma axe – sweep": {
         "stats": {
           "A": {
             "value": 6
@@ -992,7 +992,7 @@
           }
         }
       },
-      "Melee Weapon§Cthonian Beserks—Twin concussion gauntlet": {
+      "Melee Weapon§Diggydorf Beserks—Twin concussion gauntlet": {
         "assets": {
           "traits": [
             "Ability§Twin-linked"
@@ -1023,7 +1023,7 @@
           }
         }
       },
-      "Melee Weapon§Einhyr Champion—Darkstar axe": {
+      "Melee Weapon§Tuffdorf Champion—Starmetal axe": {
         "stats": {
           "A": {
             "value": 6
@@ -1042,14 +1042,14 @@
             "value": 6
           },
           "weaponName": {
-            "value": "Darkstar axe"
+            "value": "Starmetal axe"
           },
           "WS": {
             "value": 2
           }
         }
       },
-      "Melee Weapon§Einhyr Champion—Mass hammer": {
+      "Melee Weapon§Tuffdorf Champion—Mass hammer": {
         "stats": {
           "A": {
             "value": 3
@@ -1076,7 +1076,7 @@
           }
         }
       },
-      "Melee Weapon§Einhyr Hearthguard—Concussion gauntlet": {
+      "Melee Weapon§Tuffdorf Hearthguard—Concussion gauntlet": {
         "stats": {
           "A": {
             "value": 2
@@ -1102,7 +1102,7 @@
           }
         }
       },
-      "Melee Weapon§Einhyr Hearthguard—Concussion hammer": {
+      "Melee Weapon§Tuffdorf Hearthguard—Concussion hammer": {
         "stats": {
           "A": {
             "value": 3
@@ -1128,7 +1128,7 @@
           }
         }
       },
-      "Melee Weapon§Einhyr Hearthguard—Plasma blade gauntlet": {
+      "Melee Weapon§Tuffdorf Hearthguard—Plasma blade gauntlet": {
         "stats": {
           "A": {
             "value": 3
@@ -1154,7 +1154,7 @@
           }
         }
       },
-      "Melee Weapon§Grimnyr—Ancestral ward stave": {
+      "Melee Weapon§Thinkydorf—Ancestral ward stave": {
         "assets": {
           "traits": [
             "Ability§Psychic"
@@ -1186,7 +1186,7 @@
           }
         }
       },
-      "Melee Weapon§Grimnyr—Close combat weapon": {
+      "Melee Weapon§Thinkydorf—Close combat weapon": {
         "stats": {
           "A": {
             "value": 1
@@ -1212,7 +1212,7 @@
           }
         }
       },
-      "Melee Weapon§Hearthkyn Warriors—Close combat weapon": {
+      "Melee Weapon§Soldierdorf Warriors—Close combat weapon": {
         "stats": {
           "A": {
             "value": 1
@@ -1238,7 +1238,7 @@
           }
         }
       },
-      "Melee Weapon§Hearthkyn Warriors—Kin melee weapon": {
+      "Melee Weapon§Soldierdorf Warriors—Kin melee weapon": {
         "stats": {
           "A": {
             "value": 2
@@ -1264,7 +1264,7 @@
           }
         }
       },
-      "Melee Weapon§Hekaton Land Fortress—Armoured wheels": {
+      "Melee Weapon§Heckinbig Land Fortress—Armoured wheels": {
         "stats": {
           "A": {
             "value": 6
@@ -1290,7 +1290,7 @@
           }
         }
       },
-      "Melee Weapon§Hernkyn Pioneers—Plasma knife": {
+      "Melee Weapon§Cowboydorf Pioneers—Plasma knife": {
         "stats": {
           "A": {
             "value": 2
@@ -1368,7 +1368,7 @@
           }
         }
       },
-      "Melee Weapon§Sagitaur—Armoured wheels": {
+      "Melee Weapon§Spacehoss—Armoured wheels": {
         "stats": {
           "A": {
             "value": 3
@@ -1425,11 +1425,11 @@
           }
         }
       },
-      "Model§Brôkhyr Iron-master": {
+      "Model§Engindorf Iron-master": {
         "assets": {
           "traits": [
-            "Ranged Weapon§Brôkhyr Iron-master—Graviton rifle",
-            "Melee Weapon§Brôkhyr Iron-master—Graviton hammer"
+            "Ranged Weapon§Engindorf Iron-master—Graviton rifle",
+            "Melee Weapon§Engindorf Iron-master—Graviton hammer"
           ]
         },
         "keywords": {
@@ -1458,10 +1458,10 @@
           }
         }
       },
-      "Model§Brôkhyr Thunderkyn": {
+      "Model§Engindorf Thunderkyn": {
         "assets": {
           "traits": [
-            "Melee Weapon§Brôkhyr Thunderkyn—Close combat weapon"
+            "Melee Weapon§Engindorf Thunderkyn—Close combat weapon"
           ]
         },
         "rules": {
@@ -1516,8 +1516,8 @@
       "Model§CORV": {
         "assets": {
           "traits": [
-            "Ranged Weapon§Grimnyr—Autoch-pattern bolter",
-            "Melee Weapon§Grimnyr—Close combat weapon"
+            "Ranged Weapon§Thinkydorf—Smart-pattern bolter",
+            "Melee Weapon§Thinkydorf—Close combat weapon"
           ]
         },
         "stats": {
@@ -1540,9 +1540,9 @@
             "value": 1
           }
         },
-        "text": "If this unit’s Grimnyr model is ever destroyed, all of this unit’s remaining \nCORV models are also destroyed."
+        "text": "If this unit’s Thinkydorf model is ever destroyed, all of this unit’s remaining \nCORV models are also destroyed."
       },
-      "Model§Cthonian Beserk": {
+      "Model§Diggydorf Beserk": {
         "assets": {
           "traits": []
         },
@@ -1678,11 +1678,11 @@
                 "order": 2,
                 "term": "Mole grenade launcher",
                 "tracking": {
-                  "Cthonian Beserks—Mole grenade launcher": 1
+                  "Diggydorf Beserks—Mole grenade launcher": 1
                 },
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Cthonian Beserks—Mole grenade launcher"
+                    "trait": "Ranged Weapon§Diggydorf Beserks—Mole grenade launcher"
                   }
                 ]
               },
@@ -1690,11 +1690,11 @@
                 "order": 1,
                 "term": "Twin concussion gauntlet",
                 "tracking": {
-                  "Cthonian Beserks—Twin concussion gauntlet": 1
+                  "Diggydorf Beserks—Twin concussion gauntlet": 1
                 },
                 "traits": [
                   {
-                    "trait": "Melee Weapon§Cthonian Beserks—Twin concussion gauntlet"
+                    "trait": "Melee Weapon§Diggydorf Beserks—Twin concussion gauntlet"
                   }
                 ]
               }
@@ -1747,7 +1747,7 @@
                 "order": 1,
                 "traits": [
                   {
-                    "trait": "Melee Weapon§Brôkhyr Iron-master—Manipulator arms"
+                    "trait": "Melee Weapon§Engindorf Iron-master—Manipulator arms"
                   }
                 ]
               },
@@ -1755,10 +1755,10 @@
                 "order": 0,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Brôkhyr Iron-master—Autoch-pattern bolt pistol"
+                    "trait": "Ranged Weapon§Engindorf Iron-master—Smart-pattern bolt pistol"
                   },
                   {
-                    "trait": "Melee Weapon§Brôkhyr Iron-master—Close combat weapon"
+                    "trait": "Melee Weapon§Engindorf Iron-master—Close combat weapon"
                   }
                 ]
               },
@@ -1766,7 +1766,7 @@
                 "order": 2,
                 "traits": [
                   {
-                    "trait": "Melee Weapon§Brôkhyr Iron-master—Plasma torch"
+                    "trait": "Melee Weapon§Engindorf Iron-master—Plasma torch"
                   }
                 ]
               }
@@ -1777,11 +1777,11 @@
           }
         }
       },
-      "Model§Grimnyr": {
+      "Model§Thinkydorf": {
         "assets": {
           "traits": [
-            "Melee Weapon§Grimnyr—Ancestral ward stave",
-            "Weapon§Grimnyr—Ancestral Wrath"
+            "Melee Weapon§Thinkydorf—Ancestral ward stave",
+            "Weapon§Thinkydorf—Ancestral Wrath"
           ]
         },
         "keywords": {
@@ -1814,11 +1814,11 @@
       "Model§Hearthguard": {
         "assets": {
           "traits": [
-            "Ranged Weapon§Einhyr Hearthguard—Exo-armour grenade launcher"
+            "Ranged Weapon§Tuffdorf Hearthguard—Exo-armour grenade launcher"
           ]
         },
         "rules": {
-          "addEtaCarnPlasma": {
+          "addBangPewPlasma": {
             "actions": [
               {
                 "actionType": "add",
@@ -1829,7 +1829,7 @@
                     "traits"
                   ]
                 ],
-                "value": "Ranged Weapon§Einhyr Hearthguard—EtaCarn plasma gun"
+                "value": "Ranged Weapon§Tuffdorf Hearthguard—BangPew plasma gun"
               }
             ],
             "evals": [
@@ -1847,7 +1847,7 @@
                     "current"
                   ]
                 ],
-                "value": "EtaCarn"
+                "value": "BangPew"
               }
             ],
             "evaluate": "AND",
@@ -1891,7 +1891,7 @@
                     "traits"
                   ]
                 ],
-                "value": "Ranged Weapon§Einhyr Hearthguard—Volkanite disintegrator"
+                "value": "Ranged Weapon§Tuffdorf Hearthguard—Volkanite disintegrator"
               }
             ],
             "evals": [
@@ -1938,22 +1938,22 @@
           }
         }
       },
-      "Model§Hearthkyn Warrior": {
+      "Model§Soldierdorf Warrior": {
         "allowed": {
           "items": [
-            "Ranged Weapon§Hearthkyn Warriors—HYLas auto rifle",
-            "Ranged Weapon§Hearthkyn Warriors—HYLas rotary cannon",
-            "Ranged Weapon§Hearthkyn Warriors—EtaCarn plasma beamer",
-            "Ranged Weapon§Hearthkyn Warriors—Magna-rail rifle",
-            "Melee Weapon§Hearthkyn Warriors—Kin melee weapon",
-            "Weapon§Hearthkyn Warriors—L7 missile launcher"
+            "Ranged Weapon§Soldierdorf Warriors—PewPew auto rifle",
+            "Ranged Weapon§Soldierdorf Warriors—PewPew rotary cannon",
+            "Ranged Weapon§Soldierdorf Warriors—BangPew plasma beamer",
+            "Ranged Weapon§Soldierdorf Warriors—UltraPew rifle",
+            "Melee Weapon§Soldierdorf Warriors—Kin melee weapon",
+            "Weapon§Soldierdorf Warriors—Spicy missile launcher"
           ]
         },
         "assets": {
           "included": [],
           "traits": [
-            "Ranged Weapon§Hearthkyn Warriors—Autoch-pattern bolt pistol",
-            "Melee Weapon§Hearthkyn Warriors—Close combat weapon"
+            "Ranged Weapon§Soldierdorf Warriors—Smart-pattern bolt pistol",
+            "Melee Weapon§Soldierdorf Warriors—Close combat weapon"
           ]
         },
         "rules": {
@@ -2023,42 +2023,42 @@
                   }
                 ]
               },
-              "EtaCarn plasma beamer": {
+              "BangPew plasma beamer": {
                 "order": 4,
-                "term": "EtaCarn plasma beamer",
+                "term": "BangPew plasma beamer",
                 "tracking": {
-                  "Hearthkyn Warriors Special Weapon": 1,
-                  "Hearthkyn Warriors—EtaCarn plasma beamer": 1
+                  "Soldierdorf Warriors Special Weapon": 1,
+                  "Soldierdorf Warriors—BangPew plasma beamer": 1
                 },
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hearthkyn Warriors—EtaCarn plasma beamer"
+                    "trait": "Ranged Weapon§Soldierdorf Warriors—BangPew plasma beamer"
                   }
                 ]
               },
-              "HYLas auto rifle": {
+              "PewPew auto rifle": {
                 "order": 1,
-                "term": "HYLas auto rifle",
+                "term": "PewPew auto rifle",
                 "tracking": {
-                  "Hearthkyn Warriors Special Weapon": 1,
-                  "Hearthkyn Warriors—HYLas auto rifle": 1
+                  "Soldierdorf Warriors Special Weapon": 1,
+                  "Soldierdorf Warriors—PewPew auto rifle": 1
                 },
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hearthkyn Warriors—HYLas auto rifle"
+                    "trait": "Ranged Weapon§Soldierdorf Warriors—PewPew auto rifle"
                   }
                 ]
               },
-              "HYLas rotary cannon": {
+              "PewPew rotary cannon": {
                 "order": 2,
-                "term": "HYLas rotary cannon",
+                "term": "PewPew rotary cannon",
                 "tracking": {
-                  "Hearthkyn Warriors Special Weapon": 1,
-                  "Hearthkyn Warriors—HYLas rotary cannon": 1
+                  "Soldierdorf Warriors Special Weapon": 1,
+                  "Soldierdorf Warriors—PewPew rotary cannon": 1
                 },
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hearthkyn Warriors—HYLas rotary cannon"
+                    "trait": "Ranged Weapon§Soldierdorf Warriors—PewPew rotary cannon"
                   }
                 ]
               },
@@ -2066,38 +2066,38 @@
                 "order": 6,
                 "term": "Kin melee weapon",
                 "tracking": {
-                  "Hearthkyn Warriors Special Weapon": 1,
-                  "Hearthkyn Warriors—Kin melee weapon": 1
+                  "Soldierdorf Warriors Special Weapon": 1,
+                  "Soldierdorf Warriors—Kin melee weapon": 1
                 },
                 "traits": [
                   {
-                    "trait": "Melee Weapon§Hearthkyn Warriors—Kin melee weapon"
+                    "trait": "Melee Weapon§Soldierdorf Warriors—Kin melee weapon"
                   }
                 ]
               },
-              "L7 missile launcher": {
+              "Spicy missile launcher": {
                 "order": 3,
-                "term": "L7 missile launcher",
+                "term": "Spicy missile launcher",
                 "tracking": {
-                  "Hearthkyn Warriors Special Weapon": 1,
-                  "Hearthkyn Warriors—L7 missile launcher": 1
+                  "Soldierdorf Warriors Special Weapon": 1,
+                  "Soldierdorf Warriors—Spicy missile launcher": 1
                 },
                 "traits": [
                   {
-                    "trait": "Weapon§Hearthkyn Warriors—L7 missile launcher"
+                    "trait": "Weapon§Soldierdorf Warriors—Spicy missile launcher"
                   }
                 ]
               },
-              "Magna-rail rifle": {
+              "UltraPew rifle": {
                 "order": 5,
-                "term": "Magna-rail rifle",
+                "term": "UltraPew rifle",
                 "tracking": {
-                  "Hearthkyn Warriors Special Weapon": 1,
-                  "Hearthkyn Warriors—Magna-rail rifle": 1
+                  "Soldierdorf Warriors Special Weapon": 1,
+                  "Soldierdorf Warriors—UltraPew rifle": 1
                 },
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hearthkyn Warriors—Magna-rail rifle"
+                    "trait": "Ranged Weapon§Soldierdorf Warriors—UltraPew rifle"
                   }
                 ]
               },
@@ -2145,13 +2145,13 @@
           }
         }
       },
-      "Model§Hernkyn Pioneer": {
+      "Model§Cowboydorf Pioneer": {
         "assets": {
           "traits": [
-            "Melee Weapon§Hernkyn Pioneers—Plasma knife",
-            "Ranged Weapon§Hernkyn Pioneers—Bolt shotgun",
-            "Ranged Weapon§Hernkyn Pioneers—Bolt revolver",
-            "Ranged Weapon§Hernkyn Pioneers—Magna-coil autocannon"
+            "Melee Weapon§Cowboydorf Pioneers—Plasma knife",
+            "Ranged Weapon§Cowboydorf Pioneers—Bolt shotgun",
+            "Ranged Weapon§Cowboydorf Pioneers—Bolt revolver",
+            "Ranged Weapon§Cowboydorf Pioneers—Magna-coil autocannon"
           ]
         },
         "stats": {
@@ -2191,29 +2191,29 @@
                   }
                 ]
               },
-              "HYLas rotary cannon": {
+              "PewPew rotary cannon": {
                 "order": 1,
                 "tracking": {
-                  "Hernkyn Pioneers—HYLas rotary cannon": 1,
+                  "Cowboydorf Pioneers—PewPew rotary cannon": 1,
                   "SpecialWeapons": 1,
                   "W": 1
                 },
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hernkyn Pioneers—HYLas rotary cannon"
+                    "trait": "Ranged Weapon§Cowboydorf Pioneers—PewPew rotary cannon"
                   }
                 ]
               },
               "Ion beamer": {
                 "order": 2,
                 "tracking": {
-                  "Hernkyn Pioneers—Ion beamer": 1,
+                  "Cowboydorf Pioneers—Ion beamer": 1,
                   "SpecialWeapons": 1,
                   "W": 1
                 },
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hernkyn Pioneers—Ion beamer"
+                    "trait": "Ranged Weapon§Cowboydorf Pioneers—Ion beamer"
                   }
                 ]
               },
@@ -2241,10 +2241,10 @@
           }
         }
       },
-      "Model§Hesyr": {
+      "Model§Superboss": {
         "assets": {
           "traits": [
-            "Ranged Weapon§Einhyr Hearthguard—Exo-armour grenade launcher"
+            "Ranged Weapon§Tuffdorf Hearthguard—Exo-armour grenade launcher"
           ]
         },
         "rules": {
@@ -2289,7 +2289,7 @@
             "failState": "pass",
             "order": 25
           },
-          "addEtaCarnPlasma": {
+          "addBangPewPlasma": {
             "actions": [
               {
                 "actionType": "add",
@@ -2300,7 +2300,7 @@
                     "traits"
                   ]
                 ],
-                "value": "Ranged Weapon§Einhyr Hearthguard—EtaCarn plasma gun"
+                "value": "Ranged Weapon§Tuffdorf Hearthguard—BangPew plasma gun"
               }
             ],
             "evals": [
@@ -2318,7 +2318,7 @@
                     "current"
                   ]
                 ],
-                "value": "EtaCarn"
+                "value": "BangPew"
               }
             ],
             "evaluate": "AND",
@@ -2336,7 +2336,7 @@
                     "traits"
                   ]
                 ],
-                "value": "Ranged Weapon§Einhyr Hearthguard—Volkanite disintegrator"
+                "value": "Ranged Weapon§Tuffdorf Hearthguard—Volkanite disintegrator"
               }
             ],
             "evals": [
@@ -2378,7 +2378,7 @@
                 "order": 1,
                 "traits": [
                   {
-                    "trait": "Melee Weapon§Einhyr Hearthguard—Concussion hammer"
+                    "trait": "Melee Weapon§Tuffdorf Hearthguard—Concussion hammer"
                   }
                 ]
               },
@@ -2435,8 +2435,8 @@
       "Model§Ironkin Assistant": {
         "assets": {
           "traits": [
-            "Ranged Weapon§Brôkhyr Iron-master—Las-beam cutter",
-            "Melee Weapon§Brôkhyr Iron-master—Close combat weapon"
+            "Ranged Weapon§Engindorf Iron-master—Las-beam cutter",
+            "Melee Weapon§Engindorf Iron-master—Close combat weapon"
           ]
         },
         "stats": {
@@ -2460,10 +2460,10 @@
           }
         }
       },
-      "Model§Theyn": {
+      "Model§Bigboss": {
         "assets": {
           "traits": [
-            "Melee Weapon§Hearthkyn Warriors—Close combat weapon",
+            "Melee Weapon§Soldierdorf Warriors—Close combat weapon",
             "Wargear§Weavefield Crest"
           ]
         },
@@ -2525,19 +2525,19 @@
             "group": "Loadout",
             "groupOrder": 1,
             "ranks": {
-              "Autoch-pattern bolt pistol": {
+              "Smart-pattern bolt pistol": {
                 "order": 0,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hearthkyn Warriors—Autoch-pattern bolt pistol"
+                    "trait": "Ranged Weapon§Soldierdorf Warriors—Smart-pattern bolt pistol"
                   }
                 ]
               },
-              "EtaCarn plasma pistol": {
+              "BangPew plasma pistol": {
                 "order": 1,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hearthkyn Warriors—EtaCarn plasma pistol"
+                    "trait": "Ranged Weapon§Soldierdorf Warriors—BangPew plasma pistol"
                   }
                 ]
               },
@@ -2545,13 +2545,13 @@
                 "order": 2,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hearthkyn Warriors—Ion pistol"
+                    "trait": "Ranged Weapon§Soldierdorf Warriors—Ion pistol"
                   }
                 ]
               }
             },
             "statType": "rank",
-            "value": "Autoch-pattern bolt pistol",
+            "value": "Smart-pattern bolt pistol",
             "visibility": "active"
           },
           "Primary weapon": {
@@ -2564,7 +2564,7 @@
                 "term": "Kin melee weapon",
                 "traits": [
                   {
-                    "trait": "Melee Weapon§Hearthkyn Warriors—Kin melee weapon"
+                    "trait": "Melee Weapon§Soldierdorf Warriors—Kin melee weapon"
                   }
                 ]
               },
@@ -2589,7 +2589,7 @@
           }
         }
       },
-      "Ranged Weapon§Brôkhyr Iron-master—Autoch-pattern bolt pistol": {
+      "Ranged Weapon§Engindorf Iron-master—Smart-pattern bolt pistol": {
         "stats": {
           "A": {
             "value": 1
@@ -2610,11 +2610,11 @@
             "value": 4
           },
           "weaponName": {
-            "value": "Autoch-pattern bolt pistol"
+            "value": "Smart-pattern bolt pistol"
           }
         }
       },
-      "Ranged Weapon§Brôkhyr Iron-master—Graviton rifle": {
+      "Ranged Weapon§Engindorf Iron-master—Graviton rifle": {
         "assets": {
           "traits": [
             {
@@ -2654,7 +2654,7 @@
           }
         }
       },
-      "Ranged Weapon§Brôkhyr Iron-master—Las-beam cutter": {
+      "Ranged Weapon§Engindorf Iron-master—Las-beam cutter": {
         "stats": {
           "A": {
             "value": 1
@@ -2679,7 +2679,7 @@
           }
         }
       },
-      "Ranged Weapon§Brôkhyr Thunderkyn—Bolt cannon": {
+      "Ranged Weapon§Engindorf Thunderkyn—Bolt cannon": {
         "assets": {
           "traits": [
             {
@@ -2716,7 +2716,7 @@
           }
         }
       },
-      "Ranged Weapon§Brôkhyr Thunderkyn—Graviton blast cannon": {
+      "Ranged Weapon§Engindorf Thunderkyn—Graviton blast cannon": {
         "assets": {
           "traits": [
             {
@@ -2758,7 +2758,7 @@
           }
         }
       },
-      "Ranged Weapon§Brôkhyr Thunderkyn—SP conversion beamer": {
+      "Ranged Weapon§Engindorf Thunderkyn—SP conversion beamer": {
         "assets": {
           "traits": [
             "Ability§Conversion",
@@ -2789,7 +2789,7 @@
           }
         }
       },
-      "Ranged Weapon§Cthonian Beserks—Mole grenade launcher": {
+      "Ranged Weapon§Diggydorf Beserks—Mole grenade launcher": {
         "assets": {
           "traits": [
             "Ability§Blast",
@@ -2821,7 +2821,7 @@
           }
         }
       },
-      "Ranged Weapon§Einhyr Champion—Autoch-pattern combi-bolter": {
+      "Ranged Weapon§Tuffdorf Champion—Smart-pattern combi-bolter": {
         "stats": {
           "A": {
             "value": 4
@@ -2842,11 +2842,11 @@
             "value": 4
           },
           "weaponName": {
-            "value": "Autoch-pattern combi-bolter"
+            "value": "Smart-pattern combi-bolter"
           }
         }
       },
-      "Ranged Weapon§Einhyr Hearthguard—EtaCarn plasma gun": {
+      "Ranged Weapon§Tuffdorf Hearthguard—BangPew plasma gun": {
         "stats": {
           "A": {
             "value": 1
@@ -2867,11 +2867,11 @@
             "value": 8
           },
           "weaponName": {
-            "value": "EtaCarn plasma gun"
+            "value": "BangPew plasma gun"
           }
         }
       },
-      "Ranged Weapon§Einhyr Hearthguard—Exo-armour grenade launcher": {
+      "Ranged Weapon§Tuffdorf Hearthguard—Exo-armour grenade launcher": {
         "assets": {
           "traits": [
             "Ability§Blast"
@@ -2902,7 +2902,7 @@
           }
         }
       },
-      "Ranged Weapon§Einhyr Hearthguard—Volkanite disintegrator": {
+      "Ranged Weapon§Tuffdorf Hearthguard—Volkanite disintegrator": {
         "assets": {
           "traits": [
             "Ability§Devastating Wounds"
@@ -2932,7 +2932,7 @@
           }
         }
       },
-      "Ranged Weapon§Grimnyr—Ancestral Wrath – focused witchfire": {
+      "Ranged Weapon§Thinkydorf—Ancestral Wrath – focused witchfire": {
         "assets": {
           "traits": [
             "Ability§Hazardous",
@@ -2964,7 +2964,7 @@
           }
         }
       },
-      "Ranged Weapon§Grimnyr—Ancestral Wrath – witchfire": {
+      "Ranged Weapon§Thinkydorf—Ancestral Wrath – witchfire": {
         "assets": {
           "traits": [
             "Ability§Psychic"
@@ -2995,7 +2995,7 @@
           }
         }
       },
-      "Ranged Weapon§Grimnyr—Autoch-pattern bolter": {
+      "Ranged Weapon§Thinkydorf—Smart-pattern bolter": {
         "stats": {
           "A": {
             "value": 2
@@ -3016,11 +3016,11 @@
             "value": 4
           },
           "weaponName": {
-            "value": "Autoch-pattern bolter"
+            "value": "Smart-pattern bolter"
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—Autoch-pattern bolt pistol": {
+      "Ranged Weapon§Soldierdorf Warriors—Smart-pattern bolt pistol": {
         "assets": {
           "traits": [
             "Ability§Pistol"
@@ -3046,11 +3046,11 @@
             "value": 4
           },
           "weaponName": {
-            "value": "Autoch-pattern bolt pistol"
+            "value": "Smart-pattern bolt pistol"
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—Autoch-pattern bolter": {
+      "Ranged Weapon§Soldierdorf Warriors—Smart-pattern bolter": {
         "stats": {
           "A": {
             "value": 2
@@ -3071,11 +3071,11 @@
             "value": 4
           },
           "weaponName": {
-            "value": "Autoch-pattern bolter"
+            "value": "Smart-pattern bolter"
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—EtaCarn plasma beamer": {
+      "Ranged Weapon§Soldierdorf Warriors—BangPew plasma beamer": {
         "assets": {
           "traits": [
             "Ability§Sustained Hits D3"
@@ -3101,11 +3101,11 @@
             "value": 8
           },
           "weaponName": {
-            "value": "EtaCarn plasma beamer"
+            "value": "BangPew plasma beamer"
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—EtaCarn plasma pistol": {
+      "Ranged Weapon§Soldierdorf Warriors—BangPew plasma pistol": {
         "assets": {
           "traits": [
             "Ability§Pistol"
@@ -3131,11 +3131,11 @@
             "value": 8
           },
           "weaponName": {
-            "value": "EtaCarn plasma pistol"
+            "value": "BangPew plasma pistol"
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—HYLas auto rifle": {
+      "Ranged Weapon§Soldierdorf Warriors—PewPew auto rifle": {
         "assets": {
           "traits": [
             "Ability§Assault",
@@ -3169,11 +3169,11 @@
             "value": 6
           },
           "weaponName": {
-            "value": "HYLas auto rifle"
+            "value": "PewPew auto rifle"
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—HYLas rotary cannon": {
+      "Ranged Weapon§Soldierdorf Warriors—PewPew rotary cannon": {
         "assets": {
           "traits": [
             "Ability§Heavy",
@@ -3207,11 +3207,11 @@
             "value": 6
           },
           "weaponName": {
-            "value": "HYLas rotary cannon"
+            "value": "PewPew rotary cannon"
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—Ion blaster": {
+      "Ranged Weapon§Soldierdorf Warriors—Ion blaster": {
         "stats": {
           "A": {
             "value": 1
@@ -3236,7 +3236,7 @@
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—Ion pistol": {
+      "Ranged Weapon§Soldierdorf Warriors—Ion pistol": {
         "assets": {
           "traits": [
             "Ability§Pistol"
@@ -3266,7 +3266,7 @@
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—L7 missile launcher – blast": {
+      "Ranged Weapon§Soldierdorf Warriors—Spicy missile launcher – blast": {
         "assets": {
           "traits": [
             "Ability§Blast"
@@ -3297,7 +3297,7 @@
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—L7 missile launcher – focused": {
+      "Ranged Weapon§Soldierdorf Warriors—Spicy missile launcher – focused": {
         "stats": {
           "A": {
             "value": 1
@@ -3323,7 +3323,7 @@
           }
         }
       },
-      "Ranged Weapon§Hearthkyn Warriors—Magna-rail rifle": {
+      "Ranged Weapon§Soldierdorf Warriors—UltraPew rifle": {
         "assets": {
           "traits": [
             "Ability§Devastating Wounds",
@@ -3351,11 +3351,11 @@
             "value": 12
           },
           "weaponName": {
-            "value": "Magna-rail rifle"
+            "value": "UltraPew rifle"
           }
         }
       },
-      "Ranged Weapon§Hekaton Land Fortress—Cyclic ion cannon": {
+      "Ranged Weapon§Heckinbig Land Fortress—Cyclic ion cannon": {
         "assets": {
           "traits": [
             "Ability§Blast"
@@ -3386,7 +3386,7 @@
           }
         }
       },
-      "Ranged Weapon§Hekaton Land Fortress—Heavy magna-rail cannon": {
+      "Ranged Weapon§Heckinbig Land Fortress—Heavy UltraPew cannon": {
         "assets": {
           "traits": [
             "Ability§Devastating Wounds",
@@ -3414,11 +3414,11 @@
             "value": 18
           },
           "weaponName": {
-            "value": "Heavy magna-rail cannon"
+            "value": "Heavy UltraPew cannon"
           }
         }
       },
-      "Ranged Weapon§Hekaton Land Fortress—Hekaton warhead": {
+      "Ranged Weapon§Heckinbig Land Fortress—Heckinbig warhead": {
         "assets": {
           "traits": [
             "Ability§Blast",
@@ -3447,11 +3447,11 @@
             "value": 7
           },
           "weaponName": {
-            "value": "Hekaton warhead"
+            "value": "Heckinbig warhead"
           }
         }
       },
-      "Ranged Weapon§Hekaton Land Fortress—MATR autocannon": {
+      "Ranged Weapon§Heckinbig Land Fortress—MATR autocannon": {
         "stats": {
           "A": {
             "value": 6
@@ -3476,7 +3476,7 @@
           }
         }
       },
-      "Ranged Weapon§Hekaton Land Fortress—SP heavy conversion beamer": {
+      "Ranged Weapon§Heckinbig Land Fortress—SP heavy conversion beamer": {
         "assets": {
           "traits": [
             "Ability§Conversion",
@@ -3507,7 +3507,7 @@
           }
         }
       },
-      "Ranged Weapon§Hekaton Land Fortress—Twin bolt cannon": {
+      "Ranged Weapon§Heckinbig Land Fortress—Twin bolt cannon": {
         "assets": {
           "traits": [
             {
@@ -3545,7 +3545,7 @@
           }
         }
       },
-      "Ranged Weapon§Hekaton Land Fortress—Twin ion beamer": {
+      "Ranged Weapon§Heckinbig Land Fortress—Twin ion beamer": {
         "assets": {
           "traits": [
             {
@@ -3579,7 +3579,7 @@
           }
         }
       },
-      "Ranged Weapon§Hernkyn Pioneers—Bolt revolver": {
+      "Ranged Weapon§Cowboydorf Pioneers—Bolt revolver": {
         "assets": {
           "traits": [
             "Ability§Pistol"
@@ -3609,7 +3609,7 @@
           }
         }
       },
-      "Ranged Weapon§Hernkyn Pioneers—Bolt shotgun": {
+      "Ranged Weapon§Cowboydorf Pioneers—Bolt shotgun": {
         "assets": {
           "traits": [
             "Ability§Assault"
@@ -3639,7 +3639,7 @@
           }
         }
       },
-      "Ranged Weapon§Hernkyn Pioneers—HYLas rotary cannon": {
+      "Ranged Weapon§Cowboydorf Pioneers—PewPew rotary cannon": {
         "assets": {
           "traits": [
             {
@@ -3678,11 +3678,11 @@
             "visibility": "hidden"
           },
           "weaponName": {
-            "value": "HYLas rotary cannon"
+            "value": "PewPew rotary cannon"
           }
         }
       },
-      "Ranged Weapon§Hernkyn Pioneers—Ion beamer": {
+      "Ranged Weapon§Cowboydorf Pioneers—Ion beamer": {
         "assets": {
           "traits": [
             "Ability§Sustained Hits D3"
@@ -3718,7 +3718,7 @@
           }
         }
       },
-      "Ranged Weapon§Hernkyn Pioneers—Magna-coil autocannon": {
+      "Ranged Weapon§Cowboydorf Pioneers—Magna-coil autocannon": {
         "stats": {
           "A": {
             "value": 3
@@ -3743,7 +3743,7 @@
           }
         }
       },
-      "Ranged Weapon§Kâhl—Autoch-pattern combi-bolter": {
+      "Ranged Weapon§Kâhl—Smart-pattern combi-bolter": {
         "stats": {
           "A": {
             "value": 4
@@ -3764,7 +3764,7 @@
             "value": 4
           },
           "weaponName": {
-            "value": "Autoch-pattern combi-bolter"
+            "value": "Smart-pattern combi-bolter"
           }
         }
       },
@@ -3798,7 +3798,7 @@
           }
         }
       },
-      "Ranged Weapon§Sagitaur—HYLas beam cannon": {
+      "Ranged Weapon§Spacehoss—PewPew beam cannon": {
         "assets": {
           "traits": [
             "Ability§Sustained Hits D3"
@@ -3825,11 +3825,11 @@
             "value": 12
           },
           "weaponName": {
-            "value": "HYLas beam cannon"
+            "value": "PewPew beam cannon"
           }
         }
       },
-      "Ranged Weapon§Sagitaur—L7 missile launcher – blast": {
+      "Ranged Weapon§Spacehoss—Spicy missile launcher – blast": {
         "assets": {
           "traits": [
             "Ability§Blast"
@@ -3860,7 +3860,7 @@
           }
         }
       },
-      "Ranged Weapon§Sagitaur—L7 missile launcher – focused": {
+      "Ranged Weapon§Spacehoss—Spicy missile launcher – focused": {
         "stats": {
           "A": {
             "value": 1
@@ -3886,7 +3886,7 @@
           }
         }
       },
-      "Ranged Weapon§Sagitaur—MATR autocannon": {
+      "Ranged Weapon§Spacehoss—MATR autocannon": {
         "stats": {
           "A": {
             "value": 6
@@ -3911,7 +3911,7 @@
           }
         }
       },
-      "Ranged Weapon§Sagitaur—Sagitaur missile launcher": {
+      "Ranged Weapon§Spacehoss—Spacehoss missile launcher": {
         "stats": {
           "A": {
             "value": 2
@@ -3932,11 +3932,11 @@
             "value": 12
           },
           "weaponName": {
-            "value": "Sagitaur missile launcher"
+            "value": "Spacehoss missile launcher"
           }
         }
       },
-      "Ranged Weapon§Sagitaur—Twin bolt cannon": {
+      "Ranged Weapon§Spacehoss—Twin bolt cannon": {
         "assets": {
           "traits": [
             {
@@ -4012,25 +4012,25 @@
               "-": {
                 "order": 0
               },
-              "Oathband": {
+              "Friendteam": {
                 "order": 0,
                 "traits": [
                   {
-                    "trait": "Detachment§Oathband"
+                    "trait": "Detachment§Friendteam"
                   }
                 ]
               }
             },
-            "value": "Oathband"
+            "value": "Friendteam"
           },
           "Faction": {
             "dynamic": false,
             "ranks": {
-              "Leagues of Votann": {
+              "Space Army Soldiers": {
                 "order": 1
               }
             },
-            "value": "Leagues of Votann"
+            "value": "Space Army Soldiers"
           },
           "Faction Group": {
             "dynamic": false,
@@ -4041,8 +4041,8 @@
       "Stratagem§Ancestral Sentence": {
         "keywords": {
           "Keywords": [
-            "Leagues of Votann",
-            "Oathband"
+            "Space Army Soldiers",
+            "Friendteam"
           ],
           "Phase": [
             "Shooting"
@@ -4059,13 +4059,13 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Leagues of Votann unit from your army.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a ranged attack, that attack has the [SUSTAINED HITS 1] ability, and each time a model in your unit makes a ranged attack that targets a unit that has one or more Judgement tokens, that attack has the [SUSTAINED HITS 2] ability instead."
+        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Space Army Soldiers unit from your army.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a ranged attack, that attack has the [SUSTAINED HITS 1] ability, and each time a model in your unit makes a ranged attack that targets a unit that has one or more Angry Dots, that attack has the [SUSTAINED HITS 2] ability instead."
       },
       "Stratagem§Newfound Nemesis": {
         "keywords": {
           "Keywords": [
-            "Leagues of Votann",
-            "Oathband"
+            "Space Army Soldiers",
+            "Friendteam"
           ],
           "Phase": [
             "Fight",
@@ -4083,13 +4083,13 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has resolved its attacks.\n\n**TARGET:** One Leagues of Votann Infantry or Leagues of Votann Mounted unit from your army that was reduced to Below Half-strength as a result of the attacking unit’s attacks.\n\n**EFFECT:** The attacking unit gains 1 Judgement token, or up to 2 Judgement tokens instead if that Leagues of Votann unit contained your Warlord when it was targeted by those attacks."
+        "text": "**WHEN:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has resolved its attacks.\n\n**TARGET:** One Space Army Soldiers Infantry or Space Army Soldiers Mounted unit from your army that was reduced to Below Half-strength as a result of the attacking unit’s attacks.\n\n**EFFECT:** The attacking unit gains 1 Angry Dot, or up to 2 Angry Dots instead if that Space Army Soldiers unit contained your Warlord when it was targeted by those attacks."
       },
       "Stratagem§Ordered Retreat": {
         "keywords": {
           "Keywords": [
-            "Leagues of Votann",
-            "Oathband"
+            "Space Army Soldiers",
+            "Friendteam"
           ],
           "Phase": [
             "Movement"
@@ -4106,13 +4106,13 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Your Movement phase, just after a Leagues of Votann unit from your army Falls Back.\n\n**TARGET:** That Leagues of Votann unit.\n\n**EFFECT:** Until the end of the turn, your unit is eligible to shoot and declare a charge."
+        "text": "**WHEN:** Your Movement phase, just after a Space Army Soldiers unit from your army Falls Back.\n\n**TARGET:** That Space Army Soldiers unit.\n\n**EFFECT:** Until the end of the turn, your unit is eligible to shoot and declare a charge."
       },
       "Stratagem§Reactive Reprisal": {
         "keywords": {
           "Keywords": [
-            "Leagues of Votann",
-            "Oathband"
+            "Space Army Soldiers",
+            "Friendteam"
           ],
           "Phase": [
             "Shooting"
@@ -4129,13 +4129,13 @@
             "value": 2
           }
         },
-        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Leagues of Votann unit from your army.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a ranged attack, that attack has the [SUSTAINED HITS 1] ability, and each time a model in your unit makes a ranged attack that targets a unit that has one or more Judgement tokens, that attack has the [SUSTAINED HITS 2] ability instead."
+        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Space Army Soldiers unit from your army.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a ranged attack, that attack has the [SUSTAINED HITS 1] ability, and each time a model in your unit makes a ranged attack that targets a unit that has one or more Angry Dots, that attack has the [SUSTAINED HITS 2] ability instead."
       },
       "Stratagem§Void Armour": {
         "keywords": {
           "Keywords": [
-            "Leagues of Votann",
-            "Oathband"
+            "Space Army Soldiers",
+            "Friendteam"
           ],
           "Phase": [
             "Fight",
@@ -4153,13 +4153,13 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.\n\n**TARGET:** One Leagues of Votann unit from your army that was selected as the target of one or more of the attacking unit’s attacks.\n\n**EFFECT:** Until the end of the phase, each time an attack targets your Leagues of Votann unit, worsen the Armour Penteration characteristic of that attack by 1."
+        "text": "**WHEN:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.\n\n**TARGET:** One Space Army Soldiers unit from your army that was selected as the target of one or more of the attacking unit’s attacks.\n\n**EFFECT:** Until the end of the phase, each time an attack targets your Space Army Soldiers unit, worsen the Armour Penteration characteristic of that attack by 1."
       },
       "Stratagem§Warrior Pride": {
         "keywords": {
           "Keywords": [
-            "Leagues of Votann",
-            "Oathband"
+            "Space Army Soldiers",
+            "Friendteam"
           ],
           "Phase": [
             "Fight"
@@ -4177,29 +4177,29 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Fight phase.\n\n**TARGET:** One Leagues of Votann unit from your army, and one enemy unit that has one or more Judgement tokens and is within Engagement Range of that Leagues of Votann unit.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a melee attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1 for each Judgement token that enemy unit has."
+        "text": "**WHEN:** Fight phase.\n\n**TARGET:** One Space Army Soldiers unit from your army, and one enemy unit that has one or more Angry Dots and is within Engagement Range of that Space Army Soldiers unit.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a melee attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1 for each Angry Dot that enemy unit has."
       },
-      "Unit§Brôkhyr Thunderkyn": {
+      "Unit§Engindorf Thunderkyn": {
         "allowed": {
           "items": [
-            "Model§Brôkhyr Thunderkyn"
+            "Model§Engindorf Thunderkyn"
           ]
         },
         "assets": {
           "included": [
             {
-              "item": "Model§Brôkhyr Thunderkyn",
+              "item": "Model§Engindorf Thunderkyn",
               "quantity": 3
             }
           ],
           "traits": [
             "Ability§Eye of the Ancestors",
-            "Ability§Oathband Covering Fire"
+            "Ability§Friendteam Covering Fire"
           ]
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -4207,11 +4207,11 @@
           "Keywords": [
             "Infantry",
             "Exo-frame",
-            "Brôkhyr Thunderkyn"
+            "Engindorf Thunderkyn"
           ]
         },
         "stats": {
-          "Brôkhyr Thunderkyn": {
+          "Engindorf Thunderkyn": {
             "max": 6,
             "min": 3,
             "statType": "numeric",
@@ -4234,15 +4234,15 @@
             "ranks": {
               "Bolt cannon": {
                 "order": 0,
-                "term": "Ranged Weapon§Brôkhyr Thunderkyn—Bolt cannon"
+                "term": "Ranged Weapon§Engindorf Thunderkyn—Bolt cannon"
               },
               "Graviton blast cannon": {
                 "order": 1,
-                "term": "Ranged Weapon§Brôkhyr Thunderkyn—Graviton blast cannon"
+                "term": "Ranged Weapon§Engindorf Thunderkyn—Graviton blast cannon"
               },
               "SP conversion beamer": {
                 "order": 2,
-                "term": "Ranged Weapon§Brôkhyr Thunderkyn—SP conversion beamer"
+                "term": "Ranged Weapon§Engindorf Thunderkyn—SP conversion beamer"
               }
             },
             "statType": "rank",
@@ -4252,16 +4252,16 @@
         },
         "text": ""
       },
-      "Unit§Cthonian Beserks": {
+      "Unit§Diggydorf Beserks": {
         "allowed": {
           "items": [
-            "Model§Cthonian Beserk"
+            "Model§Diggydorf Beserk"
           ]
         },
         "assets": {
           "included": [
             {
-              "item": "Model§Cthonian Beserk",
+              "item": "Model§Diggydorf Beserk",
               "quantity": 5
             }
           ],
@@ -4281,14 +4281,14 @@
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
           ],
           "Keywords": [
             "Infantry",
-            "Cthonian Beserks"
+            "Diggydorf Beserks"
           ]
         },
         "rules": {
@@ -4301,7 +4301,7 @@
                   [
                     "{self}",
                     "stats",
-                    "Cthonian Beserks—Mole grenade launcher",
+                    "Diggydorf Beserks—Mole grenade launcher",
                     "max"
                   ]
                 ],
@@ -4314,7 +4314,7 @@
                   [
                     "{self}",
                     "stats",
-                    "Cthonian Beserks—Twin concussion gauntlet",
+                    "Diggydorf Beserks—Twin concussion gauntlet",
                     "max"
                   ]
                 ],
@@ -4330,7 +4330,7 @@
                   [
                     "{self}",
                     "stats",
-                    "Cthonian Beserk",
+                    "Diggydorf Beserk",
                     "value"
                   ]
                 ],
@@ -4343,7 +4343,7 @@
           }
         },
         "stats": {
-          "Cthonian Beserk": {
+          "Diggydorf Beserk": {
             "max": 10,
             "min": 5,
             "statType": "numeric",
@@ -4351,14 +4351,14 @@
             "value": 0,
             "visibility": "hidden"
           },
-          "Cthonian Beserks—Mole grenade launcher": {
+          "Diggydorf Beserks—Mole grenade launcher": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
             "value": 0,
             "visibility": "hidden"
           },
-          "Cthonian Beserks—Twin concussion gauntlet": {
+          "Diggydorf Beserks—Twin concussion gauntlet": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
@@ -4371,11 +4371,11 @@
             "ranks": {
               "Concussion maul": {
                 "order": 1,
-                "term": "Melee Weapon§Cthonian Beserks—Concussion maul"
+                "term": "Melee Weapon§Diggydorf Beserks—Concussion maul"
               },
               "Heavy plasma axe": {
                 "order": 0,
-                "term": "Weapon§Cthonian Beserks—Heavy plasma axe"
+                "term": "Weapon§Diggydorf Beserks—Heavy plasma axe"
               }
             },
             "statType": "rank",
@@ -4394,7 +4394,7 @@
         },
         "text": ""
       },
-      "Unit§Einhyr Hearthguard": {
+      "Unit§Tuffdorf Hearthguard": {
         "allowed": {
           "items": [
             "Model§Hearthguard"
@@ -4409,13 +4409,13 @@
           ],
           "traits": [
             "Ability§Eye of the Ancestors",
-            "Ability§Oathband Bodyguard",
-            "Model§Hesyr"
+            "Ability§Friendteam Bodyguard",
+            "Model§Superboss"
           ]
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -4423,7 +4423,7 @@
           "Keywords": [
             "Infantry",
             "Exo-armour",
-            "Einhyr Hearthguard"
+            "Tuffdorf Hearthguard"
           ]
         },
         "stats": {
@@ -4441,11 +4441,11 @@
             "ranks": {
               "Concussion gauntlet": {
                 "order": 0,
-                "term": "Melee Weapon§Einhyr Hearthguard—Concussion gauntlet"
+                "term": "Melee Weapon§Tuffdorf Hearthguard—Concussion gauntlet"
               },
               "Plasma blade gauntlet": {
                 "order": 1,
-                "term": "Melee Weapon§Einhyr Hearthguard—Plasma blade gauntlet"
+                "term": "Melee Weapon§Tuffdorf Hearthguard—Plasma blade gauntlet"
               }
             },
             "statType": "rank",
@@ -4465,9 +4465,9 @@
             "dynamic": true,
             "group": "Loadout",
             "ranks": {
-              "EtaCarn plasma gun": {
+              "BangPew plasma gun": {
                 "order": 0,
-                "term": "EtaCarn"
+                "term": "BangPew"
               },
               "Volkanite disintegrator": {
                 "order": 1,
@@ -4475,26 +4475,26 @@
               }
             },
             "statType": "rank",
-            "value": "EtaCarn plasma gun",
+            "value": "BangPew plasma gun",
             "visibility": "normal"
           }
         },
         "text": ""
       },
-      "Unit§Hearthkyn Warriors": {
+      "Unit§Soldierdorf Warriors": {
         "allowed": {
           "items": [
-            "Model§Hearthkyn Warrior"
+            "Model§Soldierdorf Warrior"
           ]
         },
         "assets": {
           "included": [
             {
-              "item": "Model§Hearthkyn Warrior",
+              "item": "Model§Soldierdorf Warrior",
               "quantity": 6
             },
             {
-              "item": "Model§Hearthkyn Warrior",
+              "item": "Model§Soldierdorf Warrior",
               "stats": {
                 "Loadout": {
                   "value": "Medipack"
@@ -4502,7 +4502,7 @@
               }
             },
             {
-              "item": "Model§Hearthkyn Warrior",
+              "item": "Model§Soldierdorf Warrior",
               "stats": {
                 "Loadout": {
                   "value": "Comms array"
@@ -4510,7 +4510,7 @@
               }
             },
             {
-              "item": "Model§Hearthkyn Warrior",
+              "item": "Model§Soldierdorf Warrior",
               "stats": {
                 "Loadout": {
                   "value": "Pan spectral scanner"
@@ -4521,12 +4521,12 @@
           "traits": [
             "Ability§Eye of the Ancestors",
             "Ability§Luck Has. Need Keeps. Toil Earns",
-            "Model§Theyn"
+            "Model§Bigboss"
           ]
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -4535,7 +4535,7 @@
             "Infantry",
             "Battleline",
             "Grenades",
-            "Hearthkyn Warriors"
+            "Soldierdorf Warriors"
           ]
         },
         "stats": {
@@ -4546,7 +4546,7 @@
             "value": 0,
             "visibility": "hidden"
           },
-          "Hearthkyn Warrior": {
+          "Soldierdorf Warrior": {
             "max": 9,
             "min": 9,
             "statType": "numeric",
@@ -4554,49 +4554,49 @@
             "value": 0,
             "visibility": "hidden"
           },
-          "Hearthkyn Warriors Special Weapon": {
+          "Soldierdorf Warriors Special Weapon": {
             "max": 2,
             "statType": "numeric",
             "tracked": true,
             "value": 0,
             "visibility": "hidden"
           },
-          "Hearthkyn Warriors—EtaCarn plasma beamer": {
+          "Soldierdorf Warriors—BangPew plasma beamer": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
             "value": 0,
             "visibility": "hidden"
           },
-          "Hearthkyn Warriors—HYLas auto rifle": {
+          "Soldierdorf Warriors—PewPew auto rifle": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
             "value": 0,
             "visibility": "hidden"
           },
-          "Hearthkyn Warriors—HYLas rotary cannon": {
+          "Soldierdorf Warriors—PewPew rotary cannon": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
             "value": 0,
             "visibility": "hidden"
           },
-          "Hearthkyn Warriors—Kin melee weapon": {
+          "Soldierdorf Warriors—Kin melee weapon": {
             "max": 2,
             "statType": "numeric",
             "tracked": true,
             "value": 0,
             "visibility": "hidden"
           },
-          "Hearthkyn Warriors—L7 missile launcher": {
+          "Soldierdorf Warriors—Spicy missile launcher": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
             "value": 0,
             "visibility": "hidden"
           },
-          "Hearthkyn Warriors—Magna-rail rifle": {
+          "Soldierdorf Warriors—UltraPew rifle": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
@@ -4624,24 +4624,24 @@
             "dynamic": true,
             "group": "Loadout",
             "ranks": {
-              "Autoch-pattern bolter": {
+              "Smart-pattern bolter": {
                 "order": 0,
-                "term": "Ranged Weapon§Hearthkyn Warriors—Autoch-pattern bolter",
+                "term": "Ranged Weapon§Soldierdorf Warriors—Smart-pattern bolter",
                 "tracking": {}
               },
               "Ion blaster": {
                 "order": 1,
-                "term": "Ranged Weapon§Hearthkyn Warriors—Ion blaster"
+                "term": "Ranged Weapon§Soldierdorf Warriors—Ion blaster"
               }
             },
             "statType": "rank",
-            "value": "Autoch-pattern bolter",
+            "value": "Smart-pattern bolter",
             "visibility": "normal"
           }
         },
         "text": ""
       },
-      "Unit§Hekaton Land Fortress": {
+      "Unit§Heckinbig Land Fortress": {
         "assets": {
           "traits": [
             {
@@ -4664,16 +4664,16 @@
             },
             {
               "item": "Ability§Transport",
-              "text": "This model has a transport capacity of 12 Leagues of Votann Infantry models. Each Exo-armour model takes up the space of 2 models and each Exo-frame model takes up the space of 3 models."
+              "text": "This model has a transport capacity of 12 Space Army Soldiers Infantry models. Each Exo-armour model takes up the space of 2 models and each Exo-frame model takes up the space of 3 models."
             },
-            "Ranged Weapon§Hekaton Land Fortress—MATR autocannon",
-            "Melee Weapon§Hekaton Land Fortress—Armoured wheels",
-            "Ability§Hekaton Land Fortress"
+            "Ranged Weapon§Heckinbig Land Fortress—MATR autocannon",
+            "Melee Weapon§Heckinbig Land Fortress—Armoured wheels",
+            "Ability§Heckinbig Land Fortress"
           ]
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -4681,7 +4681,7 @@
           "Keywords": [
             "Vehicle",
             "Transport",
-            "Hekaton Land Fortress"
+            "Heckinbig Land Fortress"
           ]
         },
         "stats": {
@@ -4694,15 +4694,15 @@
                 "order": 0,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hekaton Land Fortress—Cyclic ion cannon"
+                    "trait": "Ranged Weapon§Heckinbig Land Fortress—Cyclic ion cannon"
                   }
                 ]
               },
-              "Heavy magna-rail cannon": {
+              "Heavy UltraPew cannon": {
                 "order": 2,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hekaton Land Fortress—Heavy magna-rail cannon"
+                    "trait": "Ranged Weapon§Heckinbig Land Fortress—Heavy UltraPew cannon"
                   }
                 ]
               },
@@ -4710,7 +4710,7 @@
                 "order": 1,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hekaton Land Fortress—SP heavy conversion beamer"
+                    "trait": "Ranged Weapon§Heckinbig Land Fortress—SP heavy conversion beamer"
                   }
                 ]
               }
@@ -4741,10 +4741,10 @@
                 "order": 1,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hekaton Land Fortress—Twin bolt cannon"
+                    "trait": "Ranged Weapon§Heckinbig Land Fortress—Twin bolt cannon"
                   },
                   {
-                    "trait": "Ranged Weapon§Hekaton Land Fortress—Twin ion beamer"
+                    "trait": "Ranged Weapon§Heckinbig Land Fortress—Twin ion beamer"
                   }
                 ]
               },
@@ -4753,7 +4753,7 @@
                 "traits": [
                   {
                     "trait": {
-                      "item": "Ranged Weapon§Hekaton Land Fortress—Twin bolt cannon",
+                      "item": "Ranged Weapon§Heckinbig Land Fortress—Twin bolt cannon",
                       "quantity": 2
                     }
                   }
@@ -4764,7 +4764,7 @@
                 "traits": [
                   {
                     "trait": {
-                      "item": "Ranged Weapon§Hekaton Land Fortress—Twin ion beamer",
+                      "item": "Ranged Weapon§Heckinbig Land Fortress—Twin ion beamer",
                       "quantity": 2
                     }
                   }
@@ -4790,11 +4790,11 @@
             "group": "Loadout",
             "groupOrder": 2,
             "ranks": {
-              "Hekaton warhead": {
+              "Heckinbig warhead": {
                 "order": 1,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Hekaton Land Fortress—Hekaton warhead"
+                    "trait": "Ranged Weapon§Heckinbig Land Fortress—Heckinbig warhead"
                   }
                 ]
               },
@@ -4815,16 +4815,16 @@
         },
         "text": ""
       },
-      "Unit§Hernkyn Pioneers": {
+      "Unit§Cowboydorf Pioneers": {
         "allowed": {
           "items": [
-            "Model§Hernkyn Pioneer"
+            "Model§Cowboydorf Pioneer"
           ]
         },
         "assets": {
           "included": [
             {
-              "item": "Model§Hernkyn Pioneer",
+              "item": "Model§Cowboydorf Pioneer",
               "quantity": 3
             }
           ],
@@ -4843,7 +4843,7 @@
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -4852,7 +4852,7 @@
             "Mounted",
             "Grenades",
             "Fly",
-            "Hernkyn Pioneers"
+            "Cowboydorf Pioneers"
           ]
         },
         "rules": {
@@ -4865,7 +4865,7 @@
                   [
                     "{self}",
                     "stats",
-                    "Hernkyn Pioneers—HYLas rotary cannon",
+                    "Cowboydorf Pioneers—PewPew rotary cannon",
                     "max"
                   ]
                 ],
@@ -4878,7 +4878,7 @@
                   [
                     "{self}",
                     "stats",
-                    "Hernkyn Pioneers—Ion beamer",
+                    "Cowboydorf Pioneers—Ion beamer",
                     "max"
                   ]
                 ],
@@ -4907,7 +4907,7 @@
                   [
                     "{self}",
                     "stats",
-                    "Hernkyn Pioneer",
+                    "Cowboydorf Pioneer",
                     "value"
                   ]
                 ],
@@ -4927,7 +4927,7 @@
             "value": 0,
             "visibility": "hidden"
           },
-          "Hernkyn Pioneer": {
+          "Cowboydorf Pioneer": {
             "max": 6,
             "min": 3,
             "statType": "numeric",
@@ -4935,14 +4935,14 @@
             "value": 0,
             "visibility": "hidden"
           },
-          "Hernkyn Pioneers—HYLas rotary cannon": {
+          "Cowboydorf Pioneers—PewPew rotary cannon": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
             "value": 0,
             "visibility": "hidden"
           },
-          "Hernkyn Pioneers—Ion beamer": {
+          "Cowboydorf Pioneers—Ion beamer": {
             "max": 1,
             "statType": "numeric",
             "tracked": true,
@@ -4982,7 +4982,7 @@
         },
         "text": ""
       },
-      "Unit§Sagitaur": {
+      "Unit§Spacehoss": {
         "assets": {
           "traits": [
             {
@@ -5005,16 +5005,16 @@
             "Ability§Blistering Advance",
             {
               "item": "Ability§Transport",
-              "text": "This model has a transport capacity of 6 Leagues of Votann Infantry models. It cannot transport Exo-armour or Exo-frame models. At the start of the Declare Battle Formations step, you can select one Hearthkyn Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
+              "text": "This model has a transport capacity of 6 Space Army Soldiers Infantry models. It cannot transport Exo-armour or Exo-frame models. At the start of the Declare Battle Formations step, you can select one Soldierdorf Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
             },
-            "Ranged Weapon§Sagitaur—Twin bolt cannon",
-            "Melee Weapon§Sagitaur—Armoured wheels",
-            "Ability§Sagitaur"
+            "Ranged Weapon§Spacehoss—Twin bolt cannon",
+            "Melee Weapon§Spacehoss—Armoured wheels",
+            "Ability§Spacehoss"
           ]
         },
         "keywords": {
           "Faction": [
-            "Leagues of Votann"
+            "Space Army Soldiers"
           ],
           "Source": [
             "10th Edition Index"
@@ -5023,7 +5023,7 @@
             "Vehicle",
             "Transport",
             "Dedicated Transport",
-            "Sagitaur"
+            "Spacehoss"
           ]
         },
         "stats": {
@@ -5035,22 +5035,22 @@
             "group": "Loadout",
             "groupOrder": 2,
             "ranks": {
-              "HYLas beam cannon": {
+              "PewPew beam cannon": {
                 "order": 0,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Sagitaur—HYLas beam cannon"
+                    "trait": "Ranged Weapon§Spacehoss—PewPew beam cannon"
                   }
                 ]
               },
-              "L7 missile + Sagitaur missile": {
+              "Spicy missile + Spacehoss missile": {
                 "order": 1,
                 "traits": [
                   {
-                    "trait": "Weapon§Sagitaur—L7 missile launcher"
+                    "trait": "Weapon§Spacehoss—Spicy missile launcher"
                   },
                   {
-                    "trait": "Ranged Weapon§Sagitaur—Sagitaur missile launcher"
+                    "trait": "Ranged Weapon§Spacehoss—Spacehoss missile launcher"
                   }
                 ]
               },
@@ -5058,13 +5058,13 @@
                 "order": 2,
                 "traits": [
                   {
-                    "trait": "Ranged Weapon§Sagitaur—MATR autocannon"
+                    "trait": "Ranged Weapon§Spacehoss—MATR autocannon"
                   }
                 ]
               }
             },
             "statType": "rank",
-            "value": "HYLas beam cannon",
+            "value": "PewPew beam cannon",
             "visibility": "active"
           },
           "M": {
@@ -5207,11 +5207,11 @@
         },
         "text": "The bearer has a 4+ invulnerable save."
       },
-      "Weapon§Cthonian Beserks—Heavy plasma axe": {
+      "Weapon§Diggydorf Beserks—Heavy plasma axe": {
         "assets": {
           "traits": [
-            "Melee Weapon§Cthonian Beserks—Heavy plasma axe – strike",
-            "Melee Weapon§Cthonian Beserks—Heavy plasma axe – sweep"
+            "Melee Weapon§Diggydorf Beserks—Heavy plasma axe – strike",
+            "Melee Weapon§Diggydorf Beserks—Heavy plasma axe – sweep"
           ]
         },
         "keywords": {
@@ -5225,11 +5225,11 @@
           }
         }
       },
-      "Weapon§Grimnyr—Ancestral Wrath": {
+      "Weapon§Thinkydorf—Ancestral Wrath": {
         "assets": {
           "traits": [
-            "Ranged Weapon§Grimnyr—Ancestral Wrath – witchfire",
-            "Ranged Weapon§Grimnyr—Ancestral Wrath – focused witchfire"
+            "Ranged Weapon§Thinkydorf—Ancestral Wrath – witchfire",
+            "Ranged Weapon§Thinkydorf—Ancestral Wrath – focused witchfire"
           ]
         },
         "keywords": {
@@ -5243,11 +5243,11 @@
           }
         }
       },
-      "Weapon§Hearthkyn Warriors—L7 missile launcher": {
+      "Weapon§Soldierdorf Warriors—Spicy missile launcher": {
         "assets": {
           "traits": [
-            "Ranged Weapon§Hearthkyn Warriors—L7 missile launcher – blast",
-            "Ranged Weapon§Hearthkyn Warriors—L7 missile launcher – focused"
+            "Ranged Weapon§Soldierdorf Warriors—Spicy missile launcher – blast",
+            "Ranged Weapon§Soldierdorf Warriors—Spicy missile launcher – focused"
           ]
         },
         "keywords": {
@@ -5257,15 +5257,15 @@
         },
         "stats": {
           "weaponName": {
-            "value": "L7 missile launcher"
+            "value": "Spicy missile launcher"
           }
         }
       },
-      "Weapon§Sagitaur—L7 missile launcher": {
+      "Weapon§Spacehoss—Spicy missile launcher": {
         "assets": {
           "traits": [
-            "Ranged Weapon§Sagitaur—L7 missile launcher – blast",
-            "Ranged Weapon§Sagitaur—L7 missile launcher – focused"
+            "Ranged Weapon§Spacehoss—Spicy missile launcher – blast",
+            "Ranged Weapon§Spacehoss—Spicy missile launcher – focused"
           ]
         },
         "keywords": {
@@ -5275,7 +5275,7 @@
         },
         "stats": {
           "weaponName": {
-            "value": "L7 missile launcher"
+            "value": "Spicy missile launcher"
           }
         }
       }
