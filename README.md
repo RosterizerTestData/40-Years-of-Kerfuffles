@@ -3,7 +3,7 @@
 If you're going to author stuff for SpaceFight, it's wise to make it similar in structure to other elements of the SpaceFight manifes.
 
 ## Core Dependency
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Dependency.manifest
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/40YoK.manifest
 
 ## Future Authoritarians
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.manifest
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dark_Elves.manifest
 
 ### Space Dorfs
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dorfs.manifest
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/SpaceDorfs.manifest
 
 ### Undead Robot Jerks
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Undead_Robot_Jerks.manifest

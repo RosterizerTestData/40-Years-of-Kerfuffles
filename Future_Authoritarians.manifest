@@ -11,9 +11,9 @@
   "dependencies": [
     {
       "slug": "M4P888",
-      "name": "Demo Dependency",
+      "name": "40YoK",
       "game": "40 Years of Kerfuffles",
-      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Demo_Dependency.manifest"
+      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/40YoK.manifest"
     }
   ],
   "manifest": {
