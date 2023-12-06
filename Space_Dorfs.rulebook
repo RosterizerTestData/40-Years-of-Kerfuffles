@@ -1,20 +1,21 @@
 {
-  "name": "Space Army Soldiers",
+  "name": "Space Dorfs",
   "revision": "10.3.3",
   "game": "40 Years of Kerfuffles",
   "genre": "sci-fi",
   "publisher": "Nonspecific Games Company",
   "url": "https://40-Years-of-Kerfuffles.com",
-  "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
-  "wip": true,
+  "notes": "This rulebook is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
+  "wip": false,
   "dependencies": [
     {
       "slug": "M4P888",
-      "name": "Demo Dependency",
-      "game": "40 Years of Kerfuffles"
+      "name": "40YoK",
+      "game": "40 Years of Kerfuffles",
+      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/40YoK.rulebook"
     }
   ],
-  "manifest": {
+  "rulebook": {
     "assetTaxonomy": {},
     "assetCatalog": {
       "Ability§Ancestral Fortune": {
@@ -47,7 +48,7 @@
             "Other"
           ]
         },
-        "text": "At the end of your Movement phase, this unit can repair one friendly Space Army Soldiers Vehicle or Exo-frame model within 3″ of it. That model regains up to D3 lost wounds, or up to 3 lost wounds instead if this unit contains an Ironkyn Assistant. Each model can only be repaired once per turn."
+        "text": "At the end of your Movement phase, this unit can repair one friendly Space Dorfs Vehicle or Exo-frame model within 3″ of it. That model regains up to D3 lost wounds, or up to 3 lost wounds instead if this unit contains an Ironkyn Assistant. Each model can only be repaired once per turn."
       },
       "Ability§Conversion": {
         "text": "Each time an attack is made with this weapon, if the target is more than 12\" from the bearer, \nan unmodified successful Hit roll of 4+ scores a Critical Hit"
@@ -74,7 +75,7 @@
             "Faction"
           ]
         },
-        "text": "If your Army Faction is Space Army Soldiers, each time an enemy unit destroys a Space Army Soldiers unit from your army, that enemy unit gains 1 Angry Dot. An enemy unit can never have more than 2 Angry Dots (any further Angry Dots a unit would gain beyond this are ignored).\n\n\nEach time a model from your army with this ability makes an attack that targets a unit that has one or more Angry Dots, until that model’s attacks have been resolved, apply the relevant bonus from the table below to that attack.\n\n| Angry Dots | Bonus |\n| ----------- | ----------- |\n| 1 | Eminent Threat: Add 1 to the Hit roll. |\n| 2 | Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1 to the Wound roll |\n\nDesigner’s Note: If a unit with Angry Dots is removed from the battlefield, make a note of how many Angry Dots it had when it was removed. If that unit is set up on the battlefield again, place \nthe corresponding number of Angry Dots next to it. If a unit with Angry Dots splits up into two or more smaller units, each of those units gains a number of Angry Dots equal to that of the original unit. If two units combine to form a single larger unit and either of those units had Angry Dots, make a note of how many the unit with the most has, just before they combine – the new unit has a number of Angry Dots equal to this."
+        "text": "If your Army Faction is Space Dorfs, each time an enemy unit destroys a Space Dorfs unit from your army, that enemy unit gains 1 Angry Dot. An enemy unit can never have more than 2 Angry Dots (any further Angry Dots a unit would gain beyond this are ignored).\n\n\nEach time a model from your army with this ability makes an attack that targets a unit that has one or more Angry Dots, until that model’s attacks have been resolved, apply the relevant bonus from the table below to that attack.\n\n| Angry Dots | Bonus |\n| ----------- | ----------- |\n| 1 | Eminent Threat: Add 1 to the Hit roll. |\n| 2 | Now We’ve Got a Grudge to Settle: Add 1 to the Hit roll and add 1 to the Wound roll |\n\nDesigner’s Note: If a unit with Angry Dots is removed from the battlefield, make a note of how many Angry Dots it had when it was removed. If that unit is set up on the battlefield again, place \nthe corresponding number of Angry Dots next to it. If a unit with Angry Dots splits up into two or more smaller units, each of those units gains a number of Angry Dots equal to that of the original unit. If two units combine to form a single larger unit and either of those units had Angry Dots, make a note of how many the unit with the most has, just before they combine – the new unit has a number of Angry Dots equal to this."
       },
       "Ability§Fire Support": {
         "keywords": {
@@ -117,7 +118,7 @@
         "text": "Once per battle, after this model’s unit fails a Battle-shock test, this model can use this ability. If it does, that unit is no longer Battle-shocked."
       },
       "Ability§Heckinbig Land Fortress": {
-        "text": "This model has a transport capacity of 12 Space Army Soldiers Infantry models. Each Exo-armour model takes up the space of 2 models and each Exo-frame model takes up the space of 3 models."
+        "text": "This model has a transport capacity of 12 Space Dorfs Infantry models. Each Exo-armour model takes up the space of 2 models and each Exo-frame model takes up the space of 3 models."
       },
       "Ability§Kindred Hero": {
         "keywords": {
@@ -179,7 +180,7 @@
         "text": "At the end of your opponent’s turn, if this unit is within 6″ of any battlefield edge and is not within Engagement Range of any enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves."
       },
       "Ability§Spacehoss": {
-        "text": "This model has a transport capacity of 6 Space Army Soldiers Infantry models. It cannot transport Exo-armour or Exo-frame models.\n\nAt the start of the Declare Battle Formations step, you can select one Soldierdorf Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
+        "text": "This model has a transport capacity of 6 Space Dorfs Infantry models. It cannot transport Exo-armour or Exo-frame models.\n\nAt the start of the Declare Battle Formations step, you can select one Soldierdorf Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
       },
       "Ability§Scouts": {
         "stats": {
@@ -243,7 +244,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -275,7 +276,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -395,7 +396,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -437,7 +438,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -583,7 +584,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -727,7 +728,7 @@
             "value": 15
           }
         },
-        "text": "Space Army Soldiers model only. Each time the bearer’s unit destroys an enemy unit, if that enemy unit has one or more Angry Dots, you can select one other enemy unit that is visible to the bearer. That other unit gains one Angry Dot."
+        "text": "Space Dorfs model only. Each time the bearer’s unit destroys an enemy unit, if that enemy unit has one or more Angry Dots, you can select one other enemy unit that is visible to the bearer. That other unit gains one Angry Dot."
       },
       "Enhancement§Appraising Glare": {
         "keywords": {
@@ -740,7 +741,7 @@
             "value": 20
           }
         },
-        "text": "Space Army Soldiers model only. In your Boss Time, you can select one objective marker your opponent controls. Until the end of the phase, while an enemy unit is within range of that objective marker, it counts as having one more Angry Dot than it actually has (to a maximum of 2)."
+        "text": "Space Dorfs model only. In your Boss Time, you can select one objective marker your opponent controls. Until the end of the phase, while an enemy unit is within range of that objective marker, it counts as having one more Angry Dot than it actually has (to a maximum of 2)."
       },
       "Enhancement§Grim Demeanour": {
         "keywords": {
@@ -753,7 +754,7 @@
             "value": 20
           }
         },
-        "text": "Space Army Soldiers model only. You can re-roll Battle-shock tests taken for the bearer’s unit, and models in that unit can ignore any or all modifiers to their characteristics and/or to any rolls or tests made for them (excluding modifiers to saving throws)."
+        "text": "Space Dorfs model only. You can re-roll Battle-shock tests taken for the bearer’s unit, and models in that unit can ignore any or all modifiers to their characteristics and/or to any rolls or tests made for them (excluding modifiers to saving throws)."
       },
       "Enhancement§Wayfarer's Grace": {
         "keywords": {
@@ -766,7 +767,7 @@
             "value": 25
           }
         },
-        "text": "Space Army Soldiers model only. The first time the bearer is destroyed, after placing a Angry Dot next to the unit that destroyed it, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+        "text": "Space Dorfs model only. The first time the bearer is destroyed, after placing a Angry Dot next to the unit that destroyed it, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
       },
       "Melee Weapon§Engindorf Iron-master—Close combat weapon": {
         "stats": {
@@ -4025,11 +4026,11 @@
           "Faction": {
             "dynamic": false,
             "ranks": {
-              "Space Army Soldiers": {
+              "Space Dorfs": {
                 "order": 1
               }
             },
-            "value": "Space Army Soldiers"
+            "value": "Space Dorfs"
           },
           "Faction Group": {
             "dynamic": false,
@@ -4040,7 +4041,7 @@
       "Stratagem§Ancestral Sentence": {
         "keywords": {
           "Keywords": [
-            "Space Army Soldiers",
+            "Space Dorfs",
             "Friendteam"
           ],
           "Phase": [
@@ -4058,12 +4059,12 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Space Army Soldiers unit from your army.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a ranged attack, that attack has the [SUSTAINED HITS 1] ability, and each time a model in your unit makes a ranged attack that targets a unit that has one or more Angry Dots, that attack has the [SUSTAINED HITS 2] ability instead."
+        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Space Dorfs unit from your army.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a ranged attack, that attack has the [SUSTAINED HITS 1] ability, and each time a model in your unit makes a ranged attack that targets a unit that has one or more Angry Dots, that attack has the [SUSTAINED HITS 2] ability instead."
       },
       "Stratagem§Newfound Nemesis": {
         "keywords": {
           "Keywords": [
-            "Space Army Soldiers",
+            "Space Dorfs",
             "Friendteam"
           ],
           "Phase": [
@@ -4082,12 +4083,12 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has resolved its attacks.\n\n**TARGET:** One Space Army Soldiers Infantry or Space Army Soldiers Mounted unit from your army that was reduced to Below Half-strength as a result of the attacking unit’s attacks.\n\n**EFFECT:** The attacking unit gains 1 Angry Dot, or up to 2 Angry Dots instead if that Space Army Soldiers unit contained your Warlord when it was targeted by those attacks."
+        "text": "**WHEN:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has resolved its attacks.\n\n**TARGET:** One Space Dorfs Infantry or Space Dorfs Mounted unit from your army that was reduced to Below Half-strength as a result of the attacking unit’s attacks.\n\n**EFFECT:** The attacking unit gains 1 Angry Dot, or up to 2 Angry Dots instead if that Space Dorfs unit contained your Warlord when it was targeted by those attacks."
       },
       "Stratagem§Ordered Retreat": {
         "keywords": {
           "Keywords": [
-            "Space Army Soldiers",
+            "Space Dorfs",
             "Friendteam"
           ],
           "Phase": [
@@ -4105,12 +4106,12 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Your Movement phase, just after a Space Army Soldiers unit from your army Falls Back.\n\n**TARGET:** That Space Army Soldiers unit.\n\n**EFFECT:** Until the end of the turn, your unit is eligible to shoot and declare a charge."
+        "text": "**WHEN:** Your Movement phase, just after a Space Dorfs unit from your army Falls Back.\n\n**TARGET:** That Space Dorfs unit.\n\n**EFFECT:** Until the end of the turn, your unit is eligible to shoot and declare a charge."
       },
       "Stratagem§Reactive Reprisal": {
         "keywords": {
           "Keywords": [
-            "Space Army Soldiers",
+            "Space Dorfs",
             "Friendteam"
           ],
           "Phase": [
@@ -4128,12 +4129,12 @@
             "value": 2
           }
         },
-        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Space Army Soldiers unit from your army.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a ranged attack, that attack has the [SUSTAINED HITS 1] ability, and each time a model in your unit makes a ranged attack that targets a unit that has one or more Angry Dots, that attack has the [SUSTAINED HITS 2] ability instead."
+        "text": "**WHEN:** Your Shooting phase.\n\n**TARGET:** One Space Dorfs unit from your army.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a ranged attack, that attack has the [SUSTAINED HITS 1] ability, and each time a model in your unit makes a ranged attack that targets a unit that has one or more Angry Dots, that attack has the [SUSTAINED HITS 2] ability instead."
       },
       "Stratagem§Void Armour": {
         "keywords": {
           "Keywords": [
-            "Space Army Soldiers",
+            "Space Dorfs",
             "Friendteam"
           ],
           "Phase": [
@@ -4152,12 +4153,12 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.\n\n**TARGET:** One Space Army Soldiers unit from your army that was selected as the target of one or more of the attacking unit’s attacks.\n\n**EFFECT:** Until the end of the phase, each time an attack targets your Space Army Soldiers unit, worsen the Armour Penteration characteristic of that attack by 1."
+        "text": "**WHEN:** Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.\n\n**TARGET:** One Space Dorfs unit from your army that was selected as the target of one or more of the attacking unit’s attacks.\n\n**EFFECT:** Until the end of the phase, each time an attack targets your Space Dorfs unit, worsen the Armour Penteration characteristic of that attack by 1."
       },
       "Stratagem§Warrior Pride": {
         "keywords": {
           "Keywords": [
-            "Space Army Soldiers",
+            "Space Dorfs",
             "Friendteam"
           ],
           "Phase": [
@@ -4176,7 +4177,7 @@
             "value": 1
           }
         },
-        "text": "**WHEN:** Fight phase.\n\n**TARGET:** One Space Army Soldiers unit from your army, and one enemy unit that has one or more Angry Dots and is within Engagement Range of that Space Army Soldiers unit.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a melee attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1 for each Angry Dot that enemy unit has."
+        "text": "**WHEN:** Fight phase.\n\n**TARGET:** One Space Dorfs unit from your army, and one enemy unit that has one or more Angry Dots and is within Engagement Range of that Space Dorfs unit.\n\n**EFFECT:** Until the end of the phase, each time a model in your unit makes a melee attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1 for each Angry Dot that enemy unit has."
       },
       "Unit§Engindorf Thunderkyn": {
         "allowed": {
@@ -4198,7 +4199,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -4280,7 +4281,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -4414,7 +4415,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -4525,7 +4526,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -4663,7 +4664,7 @@
             },
             {
               "item": "Ability§Transport",
-              "text": "This model has a transport capacity of 12 Space Army Soldiers Infantry models. Each Exo-armour model takes up the space of 2 models and each Exo-frame model takes up the space of 3 models."
+              "text": "This model has a transport capacity of 12 Space Dorfs Infantry models. Each Exo-armour model takes up the space of 2 models and each Exo-frame model takes up the space of 3 models."
             },
             "Ranged Weapon§Heckinbig Land Fortress—MATR autocannon",
             "Melee Weapon§Heckinbig Land Fortress—Armoured wheels",
@@ -4672,7 +4673,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -4842,7 +4843,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"
@@ -5004,7 +5005,7 @@
             "Ability§Blistering Advance",
             {
               "item": "Ability§Transport",
-              "text": "This model has a transport capacity of 6 Space Army Soldiers Infantry models. It cannot transport Exo-armour or Exo-frame models. At the start of the Declare Battle Formations step, you can select one Soldierdorf Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
+              "text": "This model has a transport capacity of 6 Space Dorfs Infantry models. It cannot transport Exo-armour or Exo-frame models. At the start of the Declare Battle Formations step, you can select one Soldierdorf Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
             },
             "Ranged Weapon§Spacehoss—Twin bolt cannon",
             "Melee Weapon§Spacehoss—Armoured wheels",
@@ -5013,7 +5014,7 @@
         },
         "keywords": {
           "Faction": [
-            "Space Army Soldiers"
+            "Space Dorfs"
           ],
           "Source": [
             "10th Edition Index"

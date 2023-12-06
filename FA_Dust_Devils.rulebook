@@ -5,17 +5,17 @@
   "genre": "sci-fi",
   "publisher": "Games Workshop",
   "url": "https://warhammer40000.com",
-  "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
+  "notes": "This rulebook is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
   "wip": false,
   "dependencies": [
     {
       "slug": "KQBKXX",
       "name": "Future Authoritarians",
       "game": "Warhammer 40k",
-      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.manifest"
+      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.rulebook"
     }
   ],
-  "manifest": {
+  "rulebook": {
     "assetTaxonomy": {},
     "assetCatalog": {
       "Ability§An Honourable Death in Combat": {

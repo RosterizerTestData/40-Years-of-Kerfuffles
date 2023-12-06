@@ -5,7 +5,7 @@
   "genre": "sci-fi",
   "publisher": "Games Workshop",
   "url": "https://40-Years-of-Kerfuffles.com",
-  "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
+  "notes": "This rulebook is provided for the purposes of testing Rosterizer and is not intended for distribution. Data load provided by [Game-Datacards](https://game-datacards.eu)",
   "wip": false,
   "isModule": true,
   "dependencies": [
@@ -13,10 +13,10 @@
       "slug": "M4P888",
       "name": "40YoK",
       "game": "40 Years of Kerfuffles",
-      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/40YoK.manifest"
+      "source": "https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/40YoK.rulebook"
     }
   ],
-  "manifest": {
+  "rulebook": {
     "assetTaxonomy": {
       "Character": {
         "rules": {

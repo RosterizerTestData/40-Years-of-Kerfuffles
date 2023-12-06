@@ -5,11 +5,11 @@
   "genre": "sci-fi",
   "publisher": "Nonspecific Games Company",
   "url": "https://40-Years-of-Kerfuffles.com/",
-  "notes": "This manifest is provided for the purposes of testing Rosterizer and is not intended for distribution.",
+  "notes": "This rulebook is provided for the purposes of testing Rosterizer and is not intended for distribution.",
   "wip": false,
   "isModule": true,
   "dependencies": [],
-  "manifest": {
+  "rulebook": {
     "assetTaxonomy": {
       "Ability": {
         "aspects": {
@@ -2383,7 +2383,7 @@
                     "text"
                   ]
                 ],
-                "value": "You're trying to make a roster from the base 40k manifest. You (currently) need a faction manifest in order to create an army list. If you haven't imported a faction manifest yet, you can do so from the “Library” tab: <span class=\"mdi mdi-bookshelf\">. Click “Import” <span class=\"font-layer ng-star-inserted\"><i class=\"mdi mdi-folder-outline ng-star-inserted\"></i><i class=\"mdi mdi-arrow-right-thick ng-star-inserted\" style=\"left: -20%; top: 5%; transform: scale(0.5);\"></i></span> and select the desired manifest."
+                "value": "You're trying to make a roster from the base 40k rulebook. You (currently) need a faction rulebook in order to create an army list. If you haven't imported a faction rulebook yet, you can do so from the “Library” tab: <span class=\"mdi mdi-bookshelf\">. Click “Import” <span class=\"font-layer ng-star-inserted\"><i class=\"mdi mdi-folder-outline ng-star-inserted\"></i><i class=\"mdi mdi-arrow-right-thick ng-star-inserted\" style=\"left: -20%; top: 5%; transform: scale(0.5);\"></i></span> and select the desired rulebook."
               }
             ],
             "evals": [

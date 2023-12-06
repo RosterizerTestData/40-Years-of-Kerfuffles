@@ -1,4 +1,4 @@
-# Demo Dependency manifest
+# Demo Dependency rulebook
 
 If you're going to author stuff for SpaceFight, it's wise to make it similar in structure to other elements of the SpaceFight manifes.
 
