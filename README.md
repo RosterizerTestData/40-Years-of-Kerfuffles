@@ -1,93 +1,93 @@
 # Demo Dependency rulebook
 
-If you're going to author stuff for SpaceFight, it's wise to make it similar in structure to other elements of the SpaceFight roleboo.
+If you're going to author stuff for SpaceFight, it's wise to make it similar in structure to other elements of the SpaceFight rulebook.
 
 ## Core Dependency
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/40YoK.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/40YoK.ruleboo
 
 ## Future Authoritarians
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Authoritarians.ruleboo
 
 ## Angry Mutants
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Angry_Mutants.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Angry_Mutants.ruleboo
 
 ### Authoritarian Idealists
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Authoritarian_Idealists.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Authoritarian_Idealists.ruleboo
 
 ### Space Crusaders
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.rulebook
 
 ### Vampires but in Space
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/FA_Dust_Devils.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/FA_Dust_Devils.rulebook
 
 ### Emo Crusaders
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Emo_Crusaders.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Emo_Crusaders.ruleboo
 
 ### Angry Prison Guards
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Angry_Prison_Guards.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Angry_Prison_Guards.ruleboo
 
 ### Space Vikings
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Vikings.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Vikings.ruleboo
 
 ### BangPew Sorority
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/BangPew_Sorority.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/BangPew_Sorority.ruleboo
 
 ### Golden Bananas
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Golden_Bananas.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Golden_Bananas.ruleboo
 
 ### Toaster Fetishists
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Toaster_Fetishists.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Toaster_Fetishists.ruleboo
 
 ### The Army but future
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/The_Army_but_future.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/The_Army_but_future.ruleboo
 
 ### Psychic Genocide Dream Team
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Psychic_Genocide_Dream_Team.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Psychic_Genocide_Dream_Team.ruleboo
 
 ### Sneaky Dudes
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Sneaky_Dudes.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Sneaky_Dudes.ruleboo
 
 ### Big Stompy Robots
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Big_Stompy_Robots.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Big_Stompy_Robots.ruleboo
 
 ### Future Anarchists
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Anarchists.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Future_Anarchists.ruleboo
 
 ### Big Stompy Anarchist Robots
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Big_Stompy_Anarchist_Robots.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Big_Stompy_Anarchist_Robots.ruleboo
 
 ### Scary Nightmare Things
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Scary_Nightmare_Things.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Scary_Nightmare_Things.ruleboo
 
 ### Sick dudes
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Sick_dudes.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Sick_dudes.ruleboo
 
 ### Dust II in Space
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Dust_II_in_Space.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Dust_II_in_Space.ruleboo
 
 ### Planet Munchers
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Planet_Munchers.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Planet_Munchers.ruleboo
 
 ### Space Elves
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Elves.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Elves.ruleboo
 
 ### Space Dark Elves
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dark_Elves.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dark_Elves.ruleboo
 
 ### Space Dorfs
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dorfs.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dorfs.rulebook
 
 ### Undead Robot Jerks
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Undead_Robot_Jerks.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Undead_Robot_Jerks.ruleboo
 
 ### Angry Mushrooms
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Angry_Mushrooms.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Angry_Mushrooms.ruleboo
 
 ### Communist Fish People
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Communist_Fish_People.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Communist_Fish_People.ruleboo
 
 ### Hungry Hungry Hippos
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Hungry_Hungry_Hippos.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Hungry_Hungry_Hippos.ruleboo
 
 ### People who pet hippos
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/People_who_pet_hippos.roleboo
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/People_who_pet_hippos.ruleboo
