@@ -15,10 +15,10 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Authoritarian_Idealists.ruleboo
 
 ### Space Crusaders
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.rulebook
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Crusaders.ruleboo
 
 ### Vampires but in Space
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/FA_Dust_Devils.rulebook
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/FA_Dust_Devils.ruleboo
 
 ### Emo Crusaders
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Emo_Crusaders.ruleboo
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dark_Elves.ruleboo
 
 ### Space Dorfs
-https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dorfs.rulebook
+https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Space_Dorfs.ruleboo
 
 ### Undead Robot Jerks
 https://raw.githubusercontent.com/RosterizerTestData/40-Years-of-Kerfuffles/main/Undead_Robot_Jerks.ruleboo
